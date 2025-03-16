@@ -1,0 +1,13 @@
+C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.Core\bin\Debug\net9.0\ImageDesign.Core.deps.json
+C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.Core\bin\Debug\net9.0\ImageDesign.Core.dll
+C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.Core\bin\Debug\net9.0\ImageDesign.Core.pdb
+C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.Core\obj\Debug\net9.0\ImageDesign.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.Core\obj\Debug\net9.0\ImageDesign.Core.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.Core\obj\Debug\net9.0\ImageDesign.Core.AssemblyInfo.cs
+C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.Core\obj\Debug\net9.0\ImageDesign.Core.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.Core\obj\Debug\net9.0\ImageDesign.Core.sourcelink.json
+C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.Core\obj\Debug\net9.0\ImageDesign.Core.dll
+C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.Core\obj\Debug\net9.0\refint\ImageDesign.Core.dll
+C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.Core\obj\Debug\net9.0\ImageDesign.Core.pdb
+C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.Core\obj\Debug\net9.0\ref\ImageDesign.Core.dll
+C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.Core\obj\Debug\net9.0\ImageDesign.Core.csproj.AssemblyReference.cache
