@@ -24,6 +24,8 @@ namespace ImageDesign.Data
         public virtual DbSet<Tag> Tags { get; set; }
 
         public virtual DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Data Source=DESKTOP-P6FFS03;Initial Catalog=ImageDesign;Integrated Security=false;  Trusted_Connection = SSPI; MultipleActiveResultSets = true; TrustServerCertificate = true");

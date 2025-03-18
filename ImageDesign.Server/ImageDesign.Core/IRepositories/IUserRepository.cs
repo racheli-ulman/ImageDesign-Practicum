@@ -14,5 +14,6 @@ namespace ImageDesign.Core.IRepositories
         Task<User> AddUserAsync(User user);
         Task<User> UpdateUserAsync(int id, User user);
         Task<bool> DeleteUserAsync(int id);
+       Task<User> GetByUserByEmailAsync(string email);
     }
 }

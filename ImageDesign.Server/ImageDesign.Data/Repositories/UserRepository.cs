@@ -43,7 +43,6 @@ namespace ImageDesign.Data.Repositories
             existingUser.LastName = user.LastName;
             existingUser.Email = user.Email;
             existingUser.Password = user.Password;
-            existingUser.Role = user.Role;
             existingUser.CreatedAt = user.CreatedAt;
 
             return user;
@@ -57,6 +56,9 @@ namespace ImageDesign.Data.Repositories
             _dataContext.Users.Remove(user);
             return await _dataContext.SaveChangesAsync() > 0;
         }
-
+        public async Task<User> GetByUserByEmailAsync(string email)
+        {
+            return await _dataContext.Users.FirstOrDefaultAsync(u => u.Email == email);
+        }
     }
 }

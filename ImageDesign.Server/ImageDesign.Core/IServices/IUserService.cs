@@ -14,5 +14,7 @@ namespace ImageDesign.Core.IServices
         Task<UserDto> AddUserAsync(UserDto user);
         Task<UserDto> UpdateUserAsync(int id, UserDto user);
         Task<bool> DeleteUserAsync(int id);
+        Task<UserDto> GetUserByEmailAsync(string email);
+        Task<string> AuthenticateAsync(string email, string password);
     }
 }

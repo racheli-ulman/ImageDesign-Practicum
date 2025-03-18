@@ -13,14 +13,18 @@ namespace ImageDesign.Service
 {
     public class UserService : IUserService
     {
+        private readonly IUserRepository _userRepository;
         private readonly IRepositoryManager _repositoryManager;
-        readonly IMapper _mapper;
-
-
-        public UserService(IRepositoryManager repositoryManager, IMapper mapper)
+        private readonly IMapper _mapper;
+        private readonly IUserRoleRepository _userrolerepository;
+        private readonly IRoleRepository _rolerepository;
+        public UserService(IRepositoryManager repositoryManager, IMapper mapper, IUserRoleRepository userrolerepository, IRoleRepository rolerepository, IUserRepository userRepository)
         {
             _repositoryManager = repositoryManager;
             _mapper = mapper;
+            _userrolerepository = userrolerepository;
+            _rolerepository = rolerepository;
+            _userRepository = userRepository;
         }
 
         public async Task<IEnumerable<UserDto>> GetAllUsersAsync()
@@ -37,8 +41,11 @@ namespace ImageDesign.Service
 
         public async Task<UserDto> AddUserAsync(UserDto user)
         {
+            int id = await _rolerepository.GetIdByRoleAsync("User");
             var addeUser = _mapper.Map<User>(user);
-            var createUser = await _repositoryManager.UserM.AddUserAsync(addeUser);
+            var createUser = await _userRepository.AddUserAsync(addeUser);
+            await _repositoryManager.saveAsync();
+            await _userrolerepository.AddAsync(new UserRole() { RoleId = id, UserId = createUser.Id });
             await _repositoryManager.saveAsync();
             return _mapper.Map<UserDto>(createUser);
         }
@@ -60,5 +67,26 @@ namespace ImageDesign.Service
             await _repositoryManager.saveAsync();
             return await _repositoryManager.UserM.DeleteUserAsync(id);
         }
+        public async Task<UserDto> GetUserByEmailAsync(string email)
+        {
+            var user = await _repositoryManager.UserM.GetByUserByEmailAsync(email);
+            return _mapper.Map<UserDto>(user);
+        }
+        public async Task<string> AuthenticateAsync(string email, string password)
+        {
+            User user = await _repositoryManager.UserM.GetByUserByEmailAsync(email);
+            if (user == null || !user.Password.Equals(password))
+            {
+                return null;
+            }
+
+            var userRole = await _userrolerepository.GetByUserIdAsync(user.Id);
+            if (userRole == null)
+                return null;
+
+            return userRole.Role.RoleName;
+        }
+
+
     }
 }

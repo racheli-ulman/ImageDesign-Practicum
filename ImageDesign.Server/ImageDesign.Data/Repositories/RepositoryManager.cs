@@ -10,8 +10,6 @@ namespace ImageDesign.Data.Repositories
     public class RepositoryManager : IRepositoryManager
     {
 
-
-
         private readonly DataContext _dataContext;
 
         public IAlbumRepository AlbumM { get; }
@@ -21,20 +19,26 @@ namespace ImageDesign.Data.Repositories
         public IUserRepository UserM { get; }
 
         public ITagRepository TagM { get; }
+        public IRoleRepository RoleM { get; }
+        public IUserRepository UserRoleM { get; }
 
-        public RepositoryManager(DataContext dataContext, IAlbumRepository album, IPhotoRepository photo, IUserRepository user, ITagRepository tag)
+
+
+        public RepositoryManager(DataContext dataContext, IAlbumRepository album, IPhotoRepository photo, IUserRepository user, ITagRepository tag, IRoleRepository role, IUserRepository userRole)
         {
             _dataContext = dataContext;
             AlbumM = album;
             PhotoM = photo;
             UserM = user;
             TagM = tag;
+            RoleM = role;
+            UserRoleM = userRole;
         }
 
 
         public async Task saveAsync()
         {
-            _dataContext.SaveChanges();
+           await _dataContext.SaveChangesAsync();
         }
     }
 }

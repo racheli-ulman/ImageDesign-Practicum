@@ -164,3 +164,5 @@ C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.API\obj\Debug\n
 C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.API\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\USER\Desktop\ImageDesign\ImageDesign.Server\ImageDesign.API\bin\Debug\net9.0\System.IdentityModel.Tokens.ValidatingIssuerNameRegistry.dll

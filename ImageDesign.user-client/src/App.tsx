@@ -1,35 +1,74 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import { Container } from '@mui/material';
+import rtlPlugin from 'stylis-plugin-rtl';
+import { prefixer } from 'stylis';
+import { CacheProvider } from '@emotion/react';
+import createCache from '@emotion/cache';
+import Header from '../src/components/Header';
+import Hero from '../src/components/Hero';
+import Features from '../src/components/Features';
+import TargetAudience from '../src/components/TargetAudience';
+// import CtaSection from './components/CtaSection';
+import Footer from '../src/components/Footer';
+
+// RTL support
+const cacheRtl = createCache({
+  key: 'muirtl',
+  stylisPlugins: [prefixer, rtlPlugin],
+});
+
+// Create a theme instance with RTL support
+let theme = createTheme({
+  direction: 'rtl',
+  palette: {
+    primary: {
+      main: '#4a6fa5',
+    },
+    secondary: {
+      main: '#f8c146',
+    },
+    background: {
+      default: '#f5f7fa',
+    },
+  },
+  typography: {
+    fontFamily: [
+      'Heebo',
+      'Assistant',
+      'Rubik',
+      'Arial',
+      'sans-serif',
+    ].join(','),
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          fontWeight: 'bold',
+        },
+      },
+    },
+  },
+});
+
+theme = responsiveFontSizes(theme);
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <CacheProvider value={cacheRtl}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Header />
+        <Hero />
+        <Features />
+        <TargetAudience />
+        {/* <CtaSection /> */}
+        <Footer />
+      </ThemeProvider>
+   </CacheProvider>
+  );
 }
 
-export default App
+export default App;
