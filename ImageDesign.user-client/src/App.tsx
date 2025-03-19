@@ -12,6 +12,8 @@ import Features from '../src/components/Features';
 import TargetAudience from '../src/components/TargetAudience';
 // import CtaSection from './components/CtaSection';
 import Footer from '../src/components/Footer';
+import { RouterProvider } from 'react-router-dom';
+import { Router } from './router';
 
 // RTL support
 const cacheRtl = createCache({
@@ -60,14 +62,22 @@ function App() {
     <CacheProvider value={cacheRtl}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Header />
-        <Hero />
-        <Features />
-        <TargetAudience />
-        {/* <CtaSection /> */}
-        <Footer />
+        <div dir="rtl">
+          <RouterProvider router={Router} /> {/* כאן נטען ה-Router */}
+        </div>
       </ThemeProvider>
-   </CacheProvider>
+    </CacheProvider>
+  //   <CacheProvider value={cacheRtl}>
+  //     <ThemeProvider theme={theme}>
+  //       <CssBaseline />
+  //       <Header />
+  //       {/* <Hero /> */}
+  //       {/* <Features /> */}
+  //       {/* <TargetAudience /> */}
+  //       {/* <CtaSection /> */}
+  //       {/* <Footer /> */}
+  //     </ThemeProvider>
+  //  </CacheProvider>
   );
 }
 

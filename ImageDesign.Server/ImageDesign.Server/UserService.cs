@@ -43,12 +43,15 @@ namespace ImageDesign.Service
         {
             int id = await _rolerepository.GetIdByRoleAsync("User");
             var addeUser = _mapper.Map<User>(user);
+            addeUser.CreatedAt = DateTime.Now;
             var createUser = await _userRepository.AddUserAsync(addeUser);
+
             await _repositoryManager.saveAsync();
             await _userrolerepository.AddAsync(new UserRole() { RoleId = id, UserId = createUser.Id });
             await _repositoryManager.saveAsync();
             return _mapper.Map<UserDto>(createUser);
         }
+
 
         public async Task<UserDto> UpdateUserAsync(int id, UserDto user)
         {
@@ -79,7 +82,7 @@ namespace ImageDesign.Service
             {
                 return null;
             }
-
+             
             var userRole = await _userrolerepository.GetByUserIdAsync(user.Id);
             if (userRole == null)
                 return null;

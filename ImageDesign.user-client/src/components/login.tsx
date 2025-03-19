@@ -106,25 +106,28 @@ import { TextField, Button, Typography, Box, Paper } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-  const [username, setUsername] = useState("");
+  // alert("ddddddddddd")
+  const [userEmail, setUserEmail] = useState("");
   const [password, setPassword] = useState("");
   const [msg, setMsg] = useState("");
   const { saveUser } = useUser(); // גישה לפונקציה ששומרת את המשתמש
   const navigate = useNavigate();
 
   const reset = () => {
-    setUsername("");
+    setUserEmail("");
     setPassword("");
   };
 
   const onSend = async () => {
     try {
-      const res = await axios.post("http://localhost:8080/api/user/login", { UserName: username, Password: password });
+      console.log();
+      
+      const res = await axios.post("http://localhost:5083/api/Auth/login", { email: userEmail, password: password });
       setMsg("Login successful");
       
       // setMsg(`hi ${username}!`);
-      saveUser(res.data);
-      navigate("/recipes");
+      saveUser({ id: res.data.user.id, ...res.data }); // שמור את ה-ID יחד עם נתוני המשתמש
+      navigate("/userAlbums");
     } catch (error: any) {
       // בודקים אם יש תגובה מהשרת
       if (error.response && error.response.data) {
@@ -169,10 +172,10 @@ const Login = () => {
           התחברות
         </Typography>
         <TextField
-          label="Username"
-          value={username}
+          label="UserEmail"
+          value={userEmail}
           required
-          onChange={({ target }) => setUsername(target.value)}
+          onChange={({ target }) => setUserEmail(target.value)}
           fullWidth
           sx={{ marginBottom: 2 }}
         />
@@ -188,7 +191,7 @@ const Login = () => {
         <Button variant="contained" size="large" onClick={onSend} sx={{ backgroundColor: "#000000", "&:hover": { backgroundColor: "#333333" } }}>
           כניסה
         </Button>
-        {msg === "user not found!" && <Link to={"/logup"}>להרשמה הקליקו כאן👇</Link>}
+        {msg === "user not found!" && <Link to={"/signup"}>להרשמה הקליקו כאן👇</Link>}
         {msg && <div>{msg}</div>}
       </Paper>
     </Box>

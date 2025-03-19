@@ -12,6 +12,8 @@ namespace ImageDesign.API
             CreateMap<TagPostModel, TagDto>().ReverseMap();
             CreateMap<PhotoPostModel, PhotoDto>().ReverseMap();
             CreateMap<AlbumPostModel, AlbumsDto>().ReverseMap();
+            CreateMap<RegisterModel, UserDto>().ReverseMap();
+
         }
     }
 }

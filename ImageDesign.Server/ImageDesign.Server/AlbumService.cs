@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ImageDesign.Service
 {
@@ -26,13 +27,13 @@ namespace ImageDesign.Service
 
         public async Task<IEnumerable<AlbumsDto>> GetAllAlbumsAsync()
         {
-            var albums = _repositoryManager.AlbumM.GetAllAlbumsAsync();
+            var albums =await _repositoryManager.AlbumM.GetAllAlbumsAsync();
             return _mapper.Map<IEnumerable<AlbumsDto>>(albums);
         }
 
         public async Task<AlbumsDto> GetAlbumByIdAsync(int id)
         {
-            var album = _repositoryManager.AlbumM.GetAlbumByIdAsync(id);
+            var album =await _repositoryManager.AlbumM.GetAlbumByIdAsync(id);
             return _mapper.Map<AlbumsDto>(album);
         }
 
@@ -67,6 +68,18 @@ namespace ImageDesign.Service
             await _repositoryManager.saveAsync();
             return await _repositoryManager.AlbumM.DeleteAlbumAsync(id);
         }
+        public async Task<IEnumerable<PhotoDto>> GetImagesByAlbumIdAsync(int albumId)
+        {
+            var getPhotos = await _repositoryManager.AlbumM.GetImagesByAlbumIdAsync(albumId);
 
+            return _mapper.Map< IEnumerable<PhotoDto>>(getPhotos);
+        }
+        public async Task<IEnumerable<AlbumsDto>> GetAlbumsByUserIdAsync(int userId)
+        {
+            var getFolders = await _repositoryManager.AlbumM.GetAlbumsByUserIdAsync(userId);
+
+            return _mapper.Map<IEnumerable<AlbumsDto>>(getFolders);
+             
+        }
     }
 }

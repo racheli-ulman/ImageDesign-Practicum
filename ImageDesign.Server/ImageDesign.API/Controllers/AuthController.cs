@@ -51,7 +51,7 @@ namespace ImageDesign.API.Controllers
             else if (roleName == "User")
             {
                 var token = _authService.GenerateJwtToken(model.Email, new[] { "User" });
-                return Ok(new { Token = token });
+                return Ok(new { Token = token,User=user });
             }
 
             return Unauthorized();
@@ -82,7 +82,7 @@ namespace ImageDesign.API.Controllers
                 return BadRequest("Error assigning role to user.");
 
             var token = _authService.GenerateJwtToken(model.Email, new[] { model.RoleName });
-            return Ok(new { Token = token });
+            return Ok(new { Token = token,User=existingUser});
         }
     }
 

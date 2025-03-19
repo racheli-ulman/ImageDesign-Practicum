@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ImageDesign.Core.IRepositories
 {
@@ -14,5 +15,8 @@ namespace ImageDesign.Core.IRepositories
         Task<Album> AddAlbumAsync(Album album);
         Task<Album> UpdateAlbumAsync(int id,Album album);
         Task<bool> DeleteAlbumAsync(int id);
+        Task<IEnumerable<Photo>> GetImagesByAlbumIdAsync(int albumId);
+        Task<IEnumerable<Album>> GetAlbumsByUserIdAsync(int userId);
+
     }
 }

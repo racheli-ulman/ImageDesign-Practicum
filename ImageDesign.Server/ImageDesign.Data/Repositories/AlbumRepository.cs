@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ImageDesign.Data.Repositories
 {
@@ -48,8 +49,8 @@ namespace ImageDesign.Data.Repositories
         public async Task<bool> DeleteAlbumAsync(int id)
         {
             var album = await GetAlbumByIdAsync(id);
-            if (album == null) 
-
+            if (album == null)
+                return false;
             _dataContext.Albums.Remove(album);
             return await _dataContext.SaveChangesAsync() > 0;
         }
@@ -57,6 +58,19 @@ namespace ImageDesign.Data.Repositories
         public Task saveAsync()
         {
             throw new NotImplementedException();
+        }
+        public async Task<IEnumerable<Photo>> GetImagesByAlbumIdAsync(int albumId)
+        {
+            return await _dataContext.Photos
+                                 .Where(img => img.AlbumId == albumId)
+                                 .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Album>> GetAlbumsByUserIdAsync(int userId)
+        {
+            return await _dataContext.Albums
+                                 .Where(album => album.UserId == userId)
+                                 .ToListAsync();
         }
     }
 }

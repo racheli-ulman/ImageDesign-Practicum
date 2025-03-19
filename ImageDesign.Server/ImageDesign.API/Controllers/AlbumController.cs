@@ -77,5 +77,31 @@ namespace ImageDesign.API.Controllers
             if (!success) return NotFound();
             return Ok(success);
         }
+        //שליפת תמונות מהאלבום
+        [HttpGet("{albumId}/images")]
+        public async Task<IActionResult> GetImagesByAlbumId(int albumId)
+        {
+            var images = await _albumService.GetImagesByAlbumIdAsync(albumId);
+            if (images == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(images);
+        }
+
+        //שליפת האלבומים לפי UserId
+        [HttpGet("user/{userId}")]
+
+        public async Task<IActionResult> GetAlbumsByUserId(int userId)
+        {
+            var albums = await _albumService.GetAlbumsByUserIdAsync(userId);
+            if (albums == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(albums);
+        }
     }
 }

@@ -56,8 +56,8 @@ const Header: React.FC = () => {
   );
 
   return (
-    <AppBar position="static" elevation={0}>
-      <Container maxWidth="lg">
+    <AppBar position="fixed" elevation={0} sx={{ width: '100%' }}>
+      <Container maxWidth={false} sx={{ paddingLeft: 0, paddingRight: 0 }}>
         <Toolbar disableGutters>
           <Typography variant="h5" component="div" sx={{ flexGrow: 1, fontWeight: 'bold' }}>
             פוטו-קליק

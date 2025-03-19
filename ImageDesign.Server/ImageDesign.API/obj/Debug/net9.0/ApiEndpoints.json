@@ -37,6 +37,22 @@
   },
   {
     "ContainingType": "ImageDesign.API.Controllers.AlbumController",
+    "Method": "GetImagesByAlbumId",
+    "RelativePath": "api/Album/{albumId}/images",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "albumId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ImageDesign.API.Controllers.AlbumController",
     "Method": "Get",
     "RelativePath": "api/Album/{id}",
     "HttpMethod": "GET",
@@ -92,6 +108,22 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ImageDesign.API.Controllers.AlbumController",
+    "Method": "GetAlbumsByUserId",
+    "RelativePath": "api/Album/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
         "Type": "System.Int32",
         "IsRequired": true
       }

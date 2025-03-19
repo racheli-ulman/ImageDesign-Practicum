@@ -1,14 +1,7 @@
 import React, { createContext, useState, useContext, ReactNode } from "react";
+import { User } from "../models/user";
 
 // 🎯 נגדיר סוג (Type) לנתוני המשתמש
-interface User {
-  Id: string;
-  UserName: string;
-  Name: string;
-  Phone: string;
-  Email: string;
-  Tz: string;
-}
 
 // 🎯 נגדיר את ה-Context Interface (אובייקט ברירת מחדל)
 interface UserContextType {
