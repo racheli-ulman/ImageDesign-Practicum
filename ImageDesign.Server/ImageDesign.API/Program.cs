@@ -1,3 +1,4 @@
+using Amazon.S3;
 using ImageDesign.API;
 using ImageDesign.Core;
 using ImageDesign.Core.IRepositories;
@@ -11,6 +12,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using Amazon.Extensions.NETCore.Setup;
+using Microsoft.Extensions.Options;
+using DotNetEnv;
+Env.Load();
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -109,6 +114,27 @@ builder.Services.AddScoped<IUserRoleRepository, UserRoleRepository>();
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IUserRoleService, UserRoleService>();
 
+//builder.Services.AddAWSService<IAmazonS3>();
+//builder.Services.AddDefaultAWSOptions(builder.Configuration.GetAWSOptions());
+//builder.Services.AddAWSService<IAmazonS3>();
+
+builder.Services.AddDefaultAWSOptions(builder.Configuration.GetAWSOptions());
+builder.Services.AddSingleton<IAmazonS3>(serviceProvider =>
+{
+    var options = serviceProvider.GetRequiredService<IOptions<AWSOptions>>().Value;
+
+    // הגדרת Credentials באופן ידני
+    var credentials = new Amazon.Runtime.BasicAWSCredentials(
+        builder.Configuration["AWS_ACCESS_KEY_ID"],
+        builder.Configuration["AWS_SECRET_ACCESS_KEY"]
+    );
+
+    // הגדרת Region
+    var region = Amazon.RegionEndpoint.GetBySystemName(builder.Configuration["AWS_REGION"]);
+
+    return new AmazonS3Client(credentials, region);
+});
+
 
 builder.Services.AddScoped<IRepositoryManager, RepositoryManager>();
 
@@ -144,6 +170,23 @@ if (app.Environment.IsDevelopment())
         c.RoutePrefix = string.Empty;
     });
 }
+
+////////////////////////////////////////////////////////////////////
+
+//app.Use(async (context, next) =>
+//{
+//    if (context.Request.Method == "OPTIONS")
+//    {
+//        context.Response.StatusCode = 200;
+//        await context.Response.CompleteAsync();
+//        return;
+//    }
+//    await next();
+//});
+
+
+//////////////////////////////////////////////////////////////////
+
 app.UseCors("AllowAll");
 app.UseAuthentication();
 app.UseAuthorization(); 

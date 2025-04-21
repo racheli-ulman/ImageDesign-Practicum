@@ -12,7 +12,7 @@ namespace ImageDesign.Core.Entities
         public string TagName { get; set; }
 
         public DateTime? CreatedAt { get; set; }
-
+          
         public DateTime? UpdatedAt { get; set; }
 
         public virtual ICollection<Photo> Photos { get; set; } = new List<Photo>();

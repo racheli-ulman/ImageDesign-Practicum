@@ -31,6 +31,7 @@ namespace ImageDesign.Data.Repositories
 
         public async Task<Album> AddAlbumAsync(Album album)
         {
+
             await _dataContext.Albums.AddAsync(album);
            
             return album;
@@ -43,16 +44,30 @@ namespace ImageDesign.Data.Repositories
                 return null;
             existingAlbum.AlbumName = album.AlbumName;
             existingAlbum.UserId = album.UserId;
+            existingAlbum.description = album.description;
             return album;
         }
 
         public async Task<bool> DeleteAlbumAsync(int id)
         {
-            var album = await GetAlbumByIdAsync(id);
-            if (album == null)
+            try
+            {
+                var album = await GetAlbumByIdAsync(id);
+                if (album == null)
+                    return false;
+                _dataContext.Albums.Remove(album);
+                await _dataContext.SaveChangesAsync();
+                
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error deleting painted drawing: {ex.Message}");
                 return false;
-            _dataContext.Albums.Remove(album);
-            return await _dataContext.SaveChangesAsync() > 0;
+            }
+            
+            
         }
 
         public Task saveAsync()
@@ -71,6 +86,26 @@ namespace ImageDesign.Data.Repositories
             return await _dataContext.Albums
                                  .Where(album => album.UserId == userId)
                                  .ToListAsync();
+        }
+        //public async Task<ICollection<Album>> GetAlbumsByParentAsync(int parentId, int userId)
+        //{
+        //    return await _dataContext.Albums.Where(a => a.ParentId == parentId&&a.UserId==userId).ToListAsync();
+        //}
+        //public async Task<IEnumerable<Album>> GetChildAlbumsAsync(int parentId)
+        //{
+        //    return await _dataContext.Albums
+        //                         .Where(album => album.ParentId == parentId)
+        //                         .ToListAsync();
+        //}
+
+
+        public async Task<IEnumerable<Photo>> GetAllPhotosByUserIdAsync(int userId)
+        {
+            // Join Albums and Photos to get all photos for a specific user
+            return await _dataContext.Photos
+                .Where(photo => _dataContext.Albums
+                    .Any(album => album.UserId == userId && album.Id == photo.AlbumId))
+                .ToListAsync();
         }
     }
 }

@@ -20,6 +20,8 @@ namespace ImageDesign.Data.Repositories
 
         public async Task<IEnumerable<Photo>> GetAllPhotosAsync()
         {
+            //return await _dataContext.Photos.Include(photo => photo.Tags).ToListAsync();
+
             return await _dataContext.Photos.ToListAsync();
         }
 
@@ -33,6 +35,8 @@ namespace ImageDesign.Data.Repositories
         public async Task<Photo> AddPhotoAsync(Photo photo)
         {
             await _dataContext.Photos.AddAsync(photo);
+            //await _dataContext.SaveChangesAsync();
+           
             return photo;
         }
 
@@ -45,6 +49,8 @@ namespace ImageDesign.Data.Repositories
             existingFile.AlbumId = photo.AlbumId;
             existingFile.PhotoPath = photo.PhotoPath;
             existingFile.PhotoSize = photo.PhotoSize;
+            //existingFile.Tags = photo.Tags;
+            //existingFile.ta
             return photo;
         }
 
@@ -57,7 +63,53 @@ namespace ImageDesign.Data.Repositories
             return await _dataContext.SaveChangesAsync() > 0;
         }
 
+        public async Task<IEnumerable<Photo>> GetPhotosByAlbumIdAsync(int albumId)
+        {
+          
+            return await _dataContext.Photos.Where(photo => photo.AlbumId == albumId).ToListAsync();
+        }
 
 
+
+
+
+        public async Task<Photo> CopyPhotoToAlbumAsync(int photoId, int targetAlbumId)
+        {
+            var photo = await GetPhotoByIdAsync(photoId);
+            if (photo == null) return null;
+
+            // Create a new photo object with the same properties but new ID
+            var newPhoto = new Photo
+            {
+                UserId = photo.UserId,
+                PhotoName = photo.PhotoName,
+                AlbumId = targetAlbumId,
+                PhotoPath = photo.PhotoPath,
+                PhotoSize = photo.PhotoSize,
+                UploadedAt = DateTime.Now,
+                UpdatedAt = DateTime.Now,
+                TagId = photo.TagId,
+                IsDeleted = false
+            };
+
+            await _dataContext.Photos.AddAsync(newPhoto);
+            // SaveChanges is handled by the service
+
+            return newPhoto;
+        }
+
+        public async Task<Photo> MovePhotoToAlbumAsync(int photoId, int sourceAlbumId, int targetAlbumId)
+        {
+            var photo = await GetPhotoByIdAsync(photoId);
+            if (photo == null || photo.AlbumId != sourceAlbumId) return null;
+
+            photo.AlbumId = targetAlbumId;
+            photo.UpdatedAt = DateTime.Now;
+
+            _dataContext.Photos.Update(photo);
+            // SaveChanges is handled by the service
+
+            return photo;
+        }
     }
 }

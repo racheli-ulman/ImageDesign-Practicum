@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ImageDesign.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20250318012828_fixxx")]
-    partial class fixxx
+    [Migration("20250327160920_add-field-isDelited-t-photo-and-album")]
+    partial class addfieldisDelitedtphotoandalbum
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -55,8 +55,15 @@ namespace ImageDesign.Data.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<int>("UserId")
                         .HasColumnType("int");
+
+                    b.Property<string>("description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -76,6 +83,9 @@ namespace ImageDesign.Data.Migrations
                     b.Property<int?>("AlbumId")
                         .HasColumnType("int");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("PhotoName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -85,6 +95,9 @@ namespace ImageDesign.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("PhotoSize")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TagId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("UpdatedAt")
@@ -97,6 +110,8 @@ namespace ImageDesign.Data.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("TagId");
 
                     b.HasIndex("UserId");
 
@@ -210,21 +225,6 @@ namespace ImageDesign.Data.Migrations
                     b.ToTable("UserRoles");
                 });
 
-            modelBuilder.Entity("PhotoTag", b =>
-                {
-                    b.Property<int>("PhotosId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TagsId")
-                        .HasColumnType("int");
-
-                    b.HasKey("PhotosId", "TagsId");
-
-                    b.HasIndex("TagsId");
-
-                    b.ToTable("PhotoTag");
-                });
-
             modelBuilder.Entity("AlbumPhoto", b =>
                 {
                     b.HasOne("ImageDesign.Core.Entities.Album", null)
@@ -253,11 +253,19 @@ namespace ImageDesign.Data.Migrations
 
             modelBuilder.Entity("ImageDesign.Core.Entities.Photo", b =>
                 {
+                    b.HasOne("ImageDesign.Core.Entities.Tag", "Tag")
+                        .WithMany("Photos")
+                        .HasForeignKey("TagId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("ImageDesign.Core.Entities.User", "User")
                         .WithMany("Photos")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Tag");
 
                     b.Navigation("User");
                 });
@@ -281,19 +289,9 @@ namespace ImageDesign.Data.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("PhotoTag", b =>
+            modelBuilder.Entity("ImageDesign.Core.Entities.Tag", b =>
                 {
-                    b.HasOne("ImageDesign.Core.Entities.Photo", null)
-                        .WithMany()
-                        .HasForeignKey("PhotosId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ImageDesign.Core.Entities.Tag", null)
-                        .WithMany()
-                        .HasForeignKey("TagsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Photos");
                 });
 
             modelBuilder.Entity("ImageDesign.Core.Entities.User", b =>

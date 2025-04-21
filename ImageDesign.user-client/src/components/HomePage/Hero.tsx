@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  Box, 
-  Typography, 
-  Button, 
-  Container, 
-  useTheme 
+import { Link } from 'react-router-dom';
+
+import {
+  Box,
+  Typography,
+  Button,
+  Container,
+  useTheme
 } from '@mui/material';
 
 const images: string[] = [
@@ -55,7 +57,7 @@ const Hero: React.FC = () => {
           }}
         />
       ))}
-      
+
       <Container maxWidth="md" sx={{ position: 'relative', zIndex: 2 }}>
         <Box sx={{ textAlign: 'center', py: 4 }}>
           <Typography variant="h2" component="h1" gutterBottom fontWeight="bold">
@@ -64,13 +66,13 @@ const Hero: React.FC = () => {
           <Typography variant="h5" component="p" gutterBottom sx={{ mb: 4, maxWidth: '700px', mx: 'auto' }}>
             אפליקציה פשוטה ונוחה לניהול, ארגון ושיתוף התמונות האישיות שלכם. שמרו את הרגעים החשובים במקום אחד מאובטח.
           </Typography>
-          <Button 
-            variant="contained" 
-            color="secondary" 
+          <Button
+            variant="contained"
+            color="secondary"
             size="large"
-            sx={{ 
-              py: 1.5, 
-              px: 4, 
+            sx={{
+              py: 1.5,
+              px: 4,
               fontSize: '1.1rem',
               '&:hover': {
                 transform: 'translateY(-2px)',
@@ -78,8 +80,9 @@ const Hero: React.FC = () => {
               },
               transition: 'all 0.3s ease',
             }}
-          >
-            התחילו עכשיו
+            component={Link}
+            to="/register" >
+            הרשמו והתחילו
           </Button>
         </Box>
       </Container>

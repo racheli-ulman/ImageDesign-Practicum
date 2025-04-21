@@ -27,13 +27,13 @@ namespace ImageDesign.Service
 
         public async Task<IEnumerable<AlbumsDto>> GetAllAlbumsAsync()
         {
-            var albums =await _repositoryManager.AlbumM.GetAllAlbumsAsync();
+            var albums = await _repositoryManager.AlbumM.GetAllAlbumsAsync();
             return _mapper.Map<IEnumerable<AlbumsDto>>(albums);
         }
 
         public async Task<AlbumsDto> GetAlbumByIdAsync(int id)
         {
-            var album =await _repositoryManager.AlbumM.GetAlbumByIdAsync(id);
+            var album = await _repositoryManager.AlbumM.GetAlbumByIdAsync(id);
             return _mapper.Map<AlbumsDto>(album);
         }
 
@@ -43,12 +43,10 @@ namespace ImageDesign.Service
             var addAlbum = _mapper.Map<Album>(album);
             //if (_repositoryManager.AlbumM.GetAlbumByIdAsync(album.Id) == null)
             //{
-                var createAlbum = await _repositoryManager.AlbumM.AddAlbumAsync(addAlbum);
+            var createAlbum = await _repositoryManager.AlbumM.AddAlbumAsync(addAlbum);
             await _repositoryManager.saveAsync();
-
             return _mapper.Map<AlbumsDto>(createAlbum);
             //}
-            return null;
         }
 
 
@@ -56,8 +54,9 @@ namespace ImageDesign.Service
         {
             if (id < 0 || album == null)
                 return null;
+            album.Id = id;
             var updateAlbum = _mapper.Map<Album>(album);
-            var result =await _repositoryManager.AlbumM.UpdateAlbumAsync(id, updateAlbum);
+            var result = await _repositoryManager.AlbumM.UpdateAlbumAsync(id, updateAlbum);
             await _repositoryManager.saveAsync();
 
             return _mapper.Map<AlbumsDto>(result);
@@ -65,21 +64,41 @@ namespace ImageDesign.Service
 
         public async Task<bool> DeleteAlbumAsync(int id)
         {
-            await _repositoryManager.saveAsync();
+            //await _repositoryManager.saveAsync();        {
+
+            if (id < 0) return false;
             return await _repositoryManager.AlbumM.DeleteAlbumAsync(id);
-        }
+        }  
+        
         public async Task<IEnumerable<PhotoDto>> GetImagesByAlbumIdAsync(int albumId)
         {
             var getPhotos = await _repositoryManager.AlbumM.GetImagesByAlbumIdAsync(albumId);
 
-            return _mapper.Map< IEnumerable<PhotoDto>>(getPhotos);
+            return _mapper.Map<IEnumerable<PhotoDto>>(getPhotos);
         }
         public async Task<IEnumerable<AlbumsDto>> GetAlbumsByUserIdAsync(int userId)
         {
             var getFolders = await _repositoryManager.AlbumM.GetAlbumsByUserIdAsync(userId);
 
             return _mapper.Map<IEnumerable<AlbumsDto>>(getFolders);
-             
+
+        }
+        //public async Task<ICollection<Album>> GetAlbumsByParentAsync(int parentId, int userId)
+        //{
+        //   return await _repositoryManager.AlbumM.GetAlbumsByParentAsync(parentId, userId);
+        //}
+        //public async Task<IEnumerable<AlbumsDto>> GetChildAlbumsAsync(int parentId)
+        //{
+        //    var childAlbums = await _repositoryManager.AlbumM.GetChildAlbumsAsync(parentId);
+        //    return _mapper.Map<IEnumerable<AlbumsDto>>(childAlbums);
+        //}
+
+
+
+        public async Task<IEnumerable<PhotoDto>> GetAllPhotosByUserIdAsync(int userId)
+        {
+            var photos = await _repositoryManager.AlbumM.GetAllPhotosByUserIdAsync(userId);
+            return _mapper.Map<IEnumerable<PhotoDto>>(photos);
         }
     }
 }

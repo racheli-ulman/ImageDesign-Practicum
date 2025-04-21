@@ -51,7 +51,7 @@ namespace ImageDesign.API.Controllers
             else if (roleName == "User")
             {
                 var token = _authService.GenerateJwtToken(model.Email, new[] { "User" });
-                return Ok(new { Token = token,User=user });
+                return Ok(new { Token = token, User = user });
             }
 
             return Unauthorized();
@@ -80,9 +80,9 @@ namespace ImageDesign.API.Controllers
             var userRole = await _userRoleService.AddAsync(model.RoleName, existingUser.Id);
             if (userRole == null)
                 return BadRequest("Error assigning role to user.");
-
+            //existingUser.Role = model.RoleName;
             var token = _authService.GenerateJwtToken(model.Email, new[] { model.RoleName });
-            return Ok(new { Token = token,User=existingUser});
+            return Ok(new { Token = token, User = existingUser });
         }
     }
 
@@ -91,5 +91,6 @@ namespace ImageDesign.API.Controllers
         public string? Email { get; set; }
         public string? Password { get; set; }
     }
+
 
 }

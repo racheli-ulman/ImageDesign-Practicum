@@ -18,6 +18,14 @@ namespace ImageDesign.Core.IServices
         Task<bool> DeleteAlbumAsync(int id);
         Task<IEnumerable<PhotoDto>> GetImagesByAlbumIdAsync(int albumId);
         Task<IEnumerable<AlbumsDto>> GetAlbumsByUserIdAsync(int userId);
+        //Task<ICollection<Album>> GetAlbumsByParentAsync(int parentId, int userId);
+        //Task<IEnumerable<AlbumsDto>> GetChildAlbumsAsync(int parentId);
+
+
+
+        Task<IEnumerable<PhotoDto>> GetAllPhotosByUserIdAsync(int userId);
+
+
 
     }
 }

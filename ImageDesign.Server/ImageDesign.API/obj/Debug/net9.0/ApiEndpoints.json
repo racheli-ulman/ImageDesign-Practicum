@@ -131,6 +131,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ImageDesign.API.Controllers.AlbumController",
+    "Method": "GetAllPhotosByUserId",
+    "RelativePath": "api/Album/user/{userId}/photos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ImageDesign.Core.DTOs.PhotoDto, ImageDesign.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "ImageDesign.API.Controllers.AuthController",
     "Method": "LoginAsync",
     "RelativePath": "api/Auth/login",
@@ -161,6 +187,32 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ImageDesign.API.Controllers.DownloadController",
+    "Method": "GetDownloadUrlAsync",
+    "RelativePath": "api/Download/download-url/{fileName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "ImageDesign.API.Controllers.PhotoController",
@@ -262,6 +314,79 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ImageDesign.API.Controllers.PhotoController",
+    "Method": "GetPhotosByAlbumIdAsync",
+    "RelativePath": "api/Photo/album/{albumId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "albumId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ImageDesign.Core.DTOs.PhotoDto, ImageDesign.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ImageDesign.API.Controllers.PhotoController",
+    "Method": "CopyPhotoToAlbum",
+    "RelativePath": "api/Photo/copy/{photoId}/to-album/{targetAlbumId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "photoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "targetAlbumId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ImageDesign.API.Controllers.PhotoController",
+    "Method": "MovePhotoToAlbum",
+    "RelativePath": "api/Photo/move/{photoId}/from-album/{sourceAlbumId}/to-album/{targetAlbumId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "photoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "sourceAlbumId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "targetAlbumId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ImageDesign.API.Controllers.TagController",
     "Method": "Get",
     "RelativePath": "api/Tag",
@@ -356,6 +481,22 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ImageDesign.API.Controllers.UploadController",
+    "Method": "GetPresignedUrl",
+    "RelativePath": "api/Upload/presigned-url",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileName",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

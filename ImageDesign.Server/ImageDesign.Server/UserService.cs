@@ -47,7 +47,8 @@ namespace ImageDesign.Service
             var createUser = await _userRepository.AddUserAsync(addeUser);
 
             await _repositoryManager.saveAsync();
-            await _userrolerepository.AddAsync(new UserRole() { RoleId = id, UserId = createUser.Id });
+         var r=   await _userrolerepository.AddAsync(new UserRole() { RoleId = id, UserId = createUser.Id });
+            Console.WriteLine(r);
             await _repositoryManager.saveAsync();
             return _mapper.Map<UserDto>(createUser);
         }

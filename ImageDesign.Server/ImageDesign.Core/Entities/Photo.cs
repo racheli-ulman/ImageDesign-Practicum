@@ -12,14 +12,18 @@ namespace ImageDesign.Core.Entities
         public int UserId { get; set; }
         public string PhotoName { get; set; }
         public int? AlbumId { get; set; }
-        public string PhotoPath { get; set; }
+        public string PhotoPath { get; set; } = null!;
         public int PhotoSize { get; set; }
         public DateTime UploadedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
-        public virtual User? User { get; set; }
+        public int TagId { get; set; }
+        public bool IsDeleted { get; set; }
 
+        public virtual Tag? Tag { get; set; } // קשר עם Tag
+
+        public virtual User? User { get; set; }
         public virtual ICollection<Album> Albums { get; set; } = new List<Album>();
 
-        public virtual ICollection<Tag> Tags { get; set; } = new List<Tag>();
+        //public virtual ICollection<Tag> Tags { get; set; } = new List<Tag>();
     }
 }

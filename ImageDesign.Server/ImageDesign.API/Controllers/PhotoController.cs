@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using ImageDesign.API.Models;
 using ImageDesign.Core.DTOs;
+using ImageDesign.Core.Entities;
 using ImageDesign.Core.IServices;
 using ImageDesign.Service;
 using Microsoft.AspNetCore.Mvc;
@@ -70,6 +71,49 @@ namespace ImageDesign.API.Controllers
             bool success = await _photoService.DeletePhotoAsync(id);
             if (!success) return NotFound();
             return Ok(success);
+        }
+        [HttpGet("album/{albumId}")]
+        public async Task<ActionResult<IEnumerable<PhotoDto>>> GetPhotosByAlbumIdAsync(int albumId)
+        {
+            if (albumId <= 0) return BadRequest("Invalid album ID");
+
+            var photos = await _photoService.GetPhotosByAlbumIdAsync(albumId);
+            //if (photos == null || !photos.Any())
+            //{
+            //    // החזר הודעה מותאמת אישית כאשר אין תמונות
+            //    return NotFound("אין תמונות בתקיה זו");
+            //}
+
+            return Ok(photos);
+        }
+
+
+
+
+        [HttpPost("copy/{photoId}/to-album/{targetAlbumId}")]
+        public async Task<ActionResult> CopyPhotoToAlbum(int photoId, int targetAlbumId)
+        {
+            if (photoId <= 0 || targetAlbumId <= 0)
+                return BadRequest("Invalid photo ID or target album ID");
+
+            var result = await _photoService.CopyPhotoToAlbumAsync(photoId, targetAlbumId);
+            if (result == null)
+                return NotFound("Photo or target album not found");
+
+            return Ok(result);
+        }
+
+        [HttpPut("move/{photoId}/from-album/{sourceAlbumId}/to-album/{targetAlbumId}")]
+        public async Task<ActionResult> MovePhotoToAlbum(int photoId, int sourceAlbumId, int targetAlbumId)
+        {
+            if (photoId <= 0 || sourceAlbumId <= 0 || targetAlbumId <= 0)
+                return BadRequest("Invalid photo ID, source album ID, or target album ID");
+
+            var result = await _photoService.MovePhotoToAlbumAsync(photoId, sourceAlbumId, targetAlbumId);
+            if (result == null)
+                return NotFound("Photo, source album, or target album not found");
+
+            return Ok(result);
         }
     }
 }

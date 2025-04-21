@@ -12,8 +12,13 @@ namespace ImageDesign.Core.Entities
         public int UserId { get; set; }
         public string AlbumName { get; set; }
         public DateTime CreatedAt { get; set; }
+        //public int? ParentId { get; set; }
+        public string description { get; set; }
         public virtual User? User { get; set; }
+        //public Album? Parent { get; set; }
+        public bool IsDeleted { get; set; }
 
         public virtual ICollection<Photo> Photos { get; set; } = new List<Photo>();
+
     }
 }

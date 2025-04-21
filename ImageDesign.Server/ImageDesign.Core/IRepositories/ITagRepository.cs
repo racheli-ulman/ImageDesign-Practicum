@@ -14,5 +14,6 @@ namespace ImageDesign.Core.IRepositories
         Task<Tag> AddTagAsync(Tag tag);
         Task<Tag> UpdateTagAsync(int id, Tag tag);
         Task<bool> DeleteTagAsync(int id);
+        //Task<Tag> GetTagByStringAsync(string tag);
     }
 }

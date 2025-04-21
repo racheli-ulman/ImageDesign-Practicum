@@ -3,6 +3,8 @@ export interface Photo {
     UserId: number,
     PhotoName: string,
     AlbumId:number,
-    PhotoPath: string,
+    PhotoPath?: string,
     PhotoSize: number,
-  }
+    // UploadedAt?:Date
+    tagId:string
+  } 

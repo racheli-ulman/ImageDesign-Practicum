@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ImageDesign.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20250315215001_createDb")]
-    partial class createDb
+    [Migration("20250326222621_change-DB-name")]
+    partial class changeDBname
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -58,6 +58,10 @@ namespace ImageDesign.Data.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
+                    b.Property<string>("description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("UserId");
@@ -87,6 +91,9 @@ namespace ImageDesign.Data.Migrations
                     b.Property<int>("PhotoSize")
                         .HasColumnType("int");
 
+                    b.Property<int>("TagId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
@@ -98,9 +105,38 @@ namespace ImageDesign.Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("TagId");
+
                     b.HasIndex("UserId");
 
                     b.ToTable("Photos");
+                });
+
+            modelBuilder.Entity("ImageDesign.Core.Entities.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RoleName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
                 });
 
             modelBuilder.Entity("ImageDesign.Core.Entities.Tag", b =>
@@ -138,47 +174,49 @@ namespace ImageDesign.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FirstName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
+                    b.Property<string>("PasswordHash")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Role")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("PhotoTag", b =>
+            modelBuilder.Entity("ImageDesign.Core.Entities.UserRole", b =>
                 {
-                    b.Property<int>("PhotosId")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("TagsId")
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("RoleId")
                         .HasColumnType("int");
 
-                    b.HasKey("PhotosId", "TagsId");
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
 
-                    b.HasIndex("TagsId");
+                    b.HasKey("Id");
 
-                    b.ToTable("PhotoTag");
+                    b.HasIndex("RoleId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserRoles");
                 });
 
             modelBuilder.Entity("AlbumPhoto", b =>
@@ -209,28 +247,45 @@ namespace ImageDesign.Data.Migrations
 
             modelBuilder.Entity("ImageDesign.Core.Entities.Photo", b =>
                 {
+                    b.HasOne("ImageDesign.Core.Entities.Tag", "Tag")
+                        .WithMany("Photos")
+                        .HasForeignKey("TagId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("ImageDesign.Core.Entities.User", "User")
                         .WithMany("Photos")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("Tag");
+
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("PhotoTag", b =>
+            modelBuilder.Entity("ImageDesign.Core.Entities.UserRole", b =>
                 {
-                    b.HasOne("ImageDesign.Core.Entities.Photo", null)
+                    b.HasOne("ImageDesign.Core.Entities.Role", "Role")
                         .WithMany()
-                        .HasForeignKey("PhotosId")
+                        .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ImageDesign.Core.Entities.Tag", null)
+                    b.HasOne("ImageDesign.Core.Entities.User", "User")
                         .WithMany()
-                        .HasForeignKey("TagsId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Role");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ImageDesign.Core.Entities.Tag", b =>
+                {
+                    b.Navigation("Photos");
                 });
 
             modelBuilder.Entity("ImageDesign.Core.Entities.User", b =>

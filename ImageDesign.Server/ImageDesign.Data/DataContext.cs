@@ -12,6 +12,7 @@ namespace ImageDesign.Data
 {
     public class DataContext : DbContext
     {
+        
         public DataContext(DbContextOptions<DataContext> options): base(options)
         {
 
@@ -28,7 +29,7 @@ namespace ImageDesign.Data
         public DbSet<UserRole> UserRoles { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-P6FFS03;Initial Catalog=ImageDesign;Integrated Security=false;  Trusted_Connection = SSPI; MultipleActiveResultSets = true; TrustServerCertificate = true");
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-P6FFS03;Initial Catalog=ImageDesign_DB1;Integrated Security=false;  Trusted_Connection = SSPI; MultipleActiveResultSets = true; TrustServerCertificate = true");
         }
     }
 }

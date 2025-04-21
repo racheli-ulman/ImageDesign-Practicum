@@ -19,7 +19,6 @@ namespace ImageDesign.Core.Entities
         public DateTime UpdatedAt { get; set; }
         public string? PasswordHash { get; set; }
         public virtual ICollection<Album> Albums { get; set; } = new List<Album>();
-
         public virtual ICollection<Photo> Photos { get; set; } = new List<Photo>();
     }
 }

@@ -14,5 +14,8 @@ namespace ImageDesign.Core.IRepositories
         Task<Photo> AddPhotoAsync(Photo photo);
         Task<Photo> UpdatePhotoAsync(int id, Photo photo);
         Task<bool> DeletePhotoAsync(int id);
+        Task<IEnumerable<Photo>> GetPhotosByAlbumIdAsync(int albumId);
+        Task<Photo> CopyPhotoToAlbumAsync(int photoId, int targetAlbumId);
+        Task<Photo> MovePhotoToAlbumAsync(int photoId, int sourceAlbumId, int targetAlbumId);
     }
 }

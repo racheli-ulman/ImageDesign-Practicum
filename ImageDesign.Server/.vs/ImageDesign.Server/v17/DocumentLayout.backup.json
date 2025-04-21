@@ -3,12 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\controllers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\controllers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\tokenhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\tokenhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\imagedesign.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\imagedesign.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\controllers\\photocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\controllers\\photocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.server\\photoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|solutionrelative:imagedesign.server\\photoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\repositories\\photorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\repositories\\photorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\iservices\\iphotoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\iservices\\iphotoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\irepositories\\iphotorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\irepositories\\iphotorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\entities\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\entities\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\entities\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\entities\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.server\\albumservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,227 +71,147 @@
       "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\irepositories\\ialbumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\imagedesign.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\imagedesign.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.server\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|solutionrelative:imagedesign.server\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\entities\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\entities\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\models\\photopostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\models\\photopostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\repositories\\userrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\repositories\\userrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\models\\albumpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\models\\albumpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\models\\userpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\models\\userpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\dtos\\albumsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\dtos\\albumsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\controllers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\controllers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\repositories\\repositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\repositories\\repositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.server\\photoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|solutionrelative:imagedesign.server\\photoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\dtos\\albumsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\dtos\\albumsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.server\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|solutionrelative:imagedesign.server\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.server\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|solutionrelative:imagedesign.server\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.server\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|solutionrelative:imagedesign.server\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\profilemappingpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\profilemappingpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\iservices\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\iservices\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\irepositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\irepositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\irepositories\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\irepositories\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\profilemapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\profilemapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\migrations\\20250318012828_fixxx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\migrations\\20250318012828_fixxx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\models\\userpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\models\\userpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\iservices\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\iservices\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.server\\userroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|solutionrelative:imagedesign.server\\userroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\entities\\rolepermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\entities\\rolepermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\repositories\\userrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\repositories\\userrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\entities\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\entities\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\irepositories\\iuserrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\irepositories\\iuserrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\AppData\\Roaming\\Microsoft\\UserSecrets\\73d87ffd-5a1a-46f6-b107-6ba0c59c8bfd\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\imagedesign.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\imagedesign.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\imagedesign.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\imagedesign.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\migrations\\20250317202655_fix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\migrations\\20250317202655_fix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\controllers\\downloadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\controllers\\downloadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\entities\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\entities\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250327160920_add-field-isDelited-t-photo-and-album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ImageDesign.Data\\Migrations\\20250327160920_add-field-isDelited-t-photo-and-album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.server\\imagedesign.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|solutionrelative:imagedesign.server\\imagedesign.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\migrations\\20250317195412_jwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\migrations\\20250317195412_jwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\migrations\\20250315215001_createdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\migrations\\20250315215001_createdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\iservices\\iuserroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\iservices\\iuserroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\entities\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\entities\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.server\\tagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|solutionrelative:imagedesign.server\\tagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\iservices\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\iservices\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\iservices\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\iservices\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\entities\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\entities\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ImageDesign/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\repositories\\tagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\repositories\\tagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\repositories\\photorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\repositories\\photorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\controllers\\tagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\controllers\\tagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\dtos\\tagdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\dtos\\tagdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\imagedesign.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\imagedesign.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\dtos\\photodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\dtos\\photodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\entities\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\entities\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\models\\photopostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\models\\photopostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\dtos\\tagdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\dtos\\tagdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\models\\tagpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\models\\tagpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\imagedesign.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\imagedesign.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250326222621_change-DB-name.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ImageDesign.Data\\Migrations\\20250326222621_change-DB-name.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\irepositories\\irepositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\irepositories\\irepositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.server\\imagedesign.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|solutionrelative:imagedesign.server\\imagedesign.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250326222351_change-DB-name.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ImageDesign.Data\\Migrations\\20250326222351_change-DB-name.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250326213208_change-one-to-many-in-tag-photo1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ImageDesign.Data\\Migrations\\20250326213208_change-one-to-many-in-tag-photo1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\controllers\\tagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\controllers\\tagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.server\\tagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F839A1A9-88D8-4791-BB68-70A68C245185}|ImageDesign.Server\\ImageDesign.Service.csproj|solutionrelative:imagedesign.server\\tagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\repositories\\tagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\repositories\\tagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\iservices\\itagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -258,32 +222,126 @@
       "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\irepositories\\itagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\iservices\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\iservices\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\iservices\\iphotoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\iservices\\iphotoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\entities\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\entities\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\imagedesign.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\imagedesign.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\models\\albumpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\models\\albumpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\controllers\\photocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\controllers\\photocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\entities\\rolepermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\entities\\rolepermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\iservices\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\iservices\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\profilemapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\profilemapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\AppData\\Local\\SourceServer\\1303203551b7da9639543fb01ddc8cff0715d9d86d21f458c0bfa8964d469688\\ImageDesign.Server\\ImageDesign.API\\Controllers\\AlbumController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320164218_try_create_db2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ImageDesign.Data\\Migrations\\20250320164218_try_create_db2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320163012_add2-parentId-to-album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ImageDesign.Data\\Migrations\\20250320163012_add2-parentId-to-album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320162924_add1-parentId-to-album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ImageDesign.Data\\Migrations\\20250320162924_add1-parentId-to-album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320162742_remove-parentId-to-album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ImageDesign.Data\\Migrations\\20250320162742_remove-parentId-to-album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320144529_add-parentId-to0album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ImageDesign.Data\\Migrations\\20250320144529_add-parentId-to0album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\irepositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\irepositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.api\\profilemappingpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BA33D45-CCF7-4128-8D54-0210938A41EC}|ImageDesign.API\\ImageDesign.API.csproj|solutionrelative:imagedesign.api\\profilemappingpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320095802_add-albumschildren.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ImageDesign.Data\\Migrations\\20250320095802_add-albumschildren.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320092543_creatr-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ImageDesign.Data\\Migrations\\20250320092543_creatr-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320091025_create-new-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ImageDesign.Data\\Migrations\\20250320091025_create-new-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320085032_addParentToAlbumEntityFix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ImageDesign.Data\\Migrations\\20250320085032_addParentToAlbumEntityFix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320082155_addParentToAlbumEntity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ImageDesign.Data\\Migrations\\20250320082155_addParentToAlbumEntity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\irepositories\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\irepositories\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\entities\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\entities\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\irepositories\\iuserrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\irepositories\\iuserrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\iservices\\iuserroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\iservices\\iuserroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\iservices\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\iservices\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ImageDesign/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\imagedesign.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\imagedesign.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\irepositories\\irepositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\irepositories\\irepositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\irepositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\irepositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.core\\irepositories\\iphotorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4F25C4F-5D92-45CC-BE66-FB2D32602D4B}|ImageDesign.Core\\ImageDesign.Core.csproj|solutionrelative:imagedesign.core\\irepositories\\iphotorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|c:\\users\\user\\desktop\\imagedesign\\imagedesign.server\\imagedesign.data\\migrations\\20250317202133_fixuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86DEA538-5FCB-4777-BA31-6FEA5C363D3E}|ImageDesign.Data\\ImageDesign.Data.csproj|solutionrelative:imagedesign.data\\migrations\\20250317202133_fixuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -293,7 +351,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -301,163 +359,371 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AlbumRepository.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\AlbumRepository.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Data\\Repositories\\AlbumRepository.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\AlbumRepository.cs",
-              "RelativeToolTip": "ImageDesign.Data\\Repositories\\AlbumRepository.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAswEoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T19:20:20.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AlbumService.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\AlbumService.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Server\\AlbumService.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\AlbumService.cs",
-              "RelativeToolTip": "ImageDesign.Server\\AlbumService.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAAwFEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T19:22:31.306Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AlbumController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\AlbumController.cs",
-              "RelativeDocumentMoniker": "ImageDesign.API\\Controllers\\AlbumController.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\AlbumController.cs",
-              "RelativeToolTip": "ImageDesign.API\\Controllers\\AlbumController.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAgwF4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T17:01:01.513Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "ImageDesign.API\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "ImageDesign.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAgwFgAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T21:45:00.335Z",
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\.env",
+              "RelativeDocumentMoniker": "ImageDesign.API\\.env",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\.env*",
+              "RelativeToolTip": "ImageDesign.API\\.env*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-21T14:28:26.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\appsettings.json",
+              "RelativeDocumentMoniker": "ImageDesign.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\appsettings.json",
+              "RelativeToolTip": "ImageDesign.API\\appsettings.json",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwAwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-16T21:39:28.21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IAlbumService.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IAlbumService.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\IServices\\IAlbumService.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IAlbumService.cs",
-              "RelativeToolTip": "ImageDesign.Core\\IServices\\IAlbumService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAmwBMAAAAfAAAAAAAAAA==",
+              "Title": "TokenHelper.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\TokenHelper.cs",
+              "RelativeDocumentMoniker": "ImageDesign.API\\TokenHelper.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\TokenHelper.cs",
+              "RelativeToolTip": "ImageDesign.API\\TokenHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T19:46:05.814Z",
+              "WhenOpened": "2025-03-20T11:52:56.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Program.cs",
+              "RelativeDocumentMoniker": "ImageDesign.API\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Program.cs",
+              "RelativeToolTip": "ImageDesign.API\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwBEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T00:26:15.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\DataContext.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\DataContext.cs",
+              "RelativeToolTip": "ImageDesign.Data\\DataContext.cs",
+              "ViewState": "AgIAAA8AAABAZmZmZsY+wB0AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T15:27:35.736Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "IAlbumRepository.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\IAlbumRepository.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\IRepositories\\IAlbumRepository.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\IAlbumRepository.cs",
-              "RelativeToolTip": "ImageDesign.Core\\IRepositories\\IAlbumRepository.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAADwvxMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T19:45:19.179Z",
+              "Title": "ImageDesign.API.csproj",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\ImageDesign.API.csproj",
+              "RelativeDocumentMoniker": "ImageDesign.API\\ImageDesign.API.csproj",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\ImageDesign.API.csproj",
+              "RelativeToolTip": "ImageDesign.API\\ImageDesign.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-15T21:27:40.718Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ImageDesign.Data.csproj",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\ImageDesign.Data.csproj",
-              "RelativeDocumentMoniker": "ImageDesign.Data\\ImageDesign.Data.csproj",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\ImageDesign.Data.csproj",
-              "RelativeToolTip": "ImageDesign.Data\\ImageDesign.Data.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-11T22:31:39.674Z",
+              "Title": "PhotoController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\PhotoController.cs",
+              "RelativeDocumentMoniker": "ImageDesign.API\\Controllers\\PhotoController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\PhotoController.cs",
+              "RelativeToolTip": "ImageDesign.API\\Controllers\\PhotoController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAcwHQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T17:01:51.365Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\UserService.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Server\\UserService.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\UserService.cs",
-              "RelativeToolTip": "ImageDesign.Server\\UserService.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAswC0AAAAuAAAAAAAAAA==",
+              "Title": "PhotoService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\PhotoService.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Server\\PhotoService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\PhotoService.cs",
+              "RelativeToolTip": "ImageDesign.Server\\PhotoService.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAiwGkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T19:22:13.103Z",
+              "WhenOpened": "2025-03-11T19:22:44.171Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "PhotoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\PhotoRepository.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Repositories\\PhotoRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\PhotoRepository.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Repositories\\PhotoRepository.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAcwHAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T19:20:42.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IPhotoService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IPhotoService.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\IServices\\IPhotoService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IPhotoService.cs",
+              "RelativeToolTip": "ImageDesign.Core\\IServices\\IPhotoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T19:46:39.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IPhotoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\IPhotoRepository.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\IRepositories\\IPhotoRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\IPhotoRepository.cs",
+              "RelativeToolTip": "ImageDesign.Core\\IRepositories\\IPhotoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T19:45:00.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Photo.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\Photo.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\Entities\\Photo.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\Photo.cs",
+              "RelativeToolTip": "ImageDesign.Core\\Entities\\Photo.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T17:33:46.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Album.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\Album.cs",
               "RelativeDocumentMoniker": "ImageDesign.Core\\Entities\\Album.cs",
               "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\Album.cs",
               "RelativeToolTip": "ImageDesign.Core\\Entities\\Album.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAmwAwAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAcwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T17:33:36.721Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PhotoPostModel.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Models\\PhotoPostModel.cs",
-              "RelativeDocumentMoniker": "ImageDesign.API\\Models\\PhotoPostModel.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Models\\PhotoPostModel.cs",
-              "RelativeToolTip": "ImageDesign.API\\Models\\PhotoPostModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "AlbumService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\AlbumService.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Server\\AlbumService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\AlbumService.cs",
+              "RelativeToolTip": "ImageDesign.Server\\AlbumService.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAzwGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T16:41:02.279Z",
+              "WhenOpened": "2025-03-11T19:22:31.306Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserRoleRepository.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\UserRoleRepository.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Data\\Repositories\\UserRoleRepository.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\UserRoleRepository.cs",
-              "RelativeToolTip": "ImageDesign.Data\\Repositories\\UserRoleRepository.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAA8wBcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "AlbumRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\AlbumRepository.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Repositories\\AlbumRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\AlbumRepository.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Repositories\\AlbumRepository.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAYwG8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T18:04:12.282Z",
+              "WhenOpened": "2025-03-11T19:20:20.778Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AlbumPostModel.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Models\\AlbumPostModel.cs",
-              "RelativeDocumentMoniker": "ImageDesign.API\\Models\\AlbumPostModel.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Models\\AlbumPostModel.cs",
-              "RelativeToolTip": "ImageDesign.API\\Models\\AlbumPostModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA2AAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "IAlbumService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IAlbumService.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\IServices\\IAlbumService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IAlbumService.cs",
+              "RelativeToolTip": "ImageDesign.Core\\IServices\\IAlbumService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA2wB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T16:39:44.613Z",
+              "WhenOpened": "2025-03-11T19:46:05.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
+              "Title": "IAlbumRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\IAlbumRepository.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\IRepositories\\IAlbumRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\IAlbumRepository.cs",
+              "RelativeToolTip": "ImageDesign.Core\\IRepositories\\IAlbumRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAcwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T19:45:19.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AlbumController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\AlbumController.cs",
+              "RelativeDocumentMoniker": "ImageDesign.API\\Controllers\\AlbumController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\AlbumController.cs",
+              "RelativeToolTip": "ImageDesign.API\\Controllers\\AlbumController.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAYwJoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T17:01:01.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RepositoryManager.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\RepositoryManager.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Repositories\\RepositoryManager.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\RepositoryManager.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Repositories\\RepositoryManager.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAIA2wCkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T22:18:26.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AlbumsDto.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\AlbumsDto.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\DTOs\\AlbumsDto.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\AlbumsDto.cs",
+              "RelativeToolTip": "ImageDesign.Core\\DTOs\\AlbumsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T19:09:52.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAIBJwD0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T19:20:59.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\UserService.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Server\\UserService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\UserService.cs",
+              "RelativeToolTip": "ImageDesign.Server\\UserService.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAuwFEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T19:22:13.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ImageDesign.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ImageDesign.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAIBJwCkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T21:45:00.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\AuthService.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Server\\AuthService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\AuthService.cs",
+              "RelativeToolTip": "ImageDesign.Server\\AuthService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwEEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T23:40:12.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\User.cs",
+              "RelativeToolTip": "ImageDesign.Core\\Entities\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwBIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T17:33:27.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\DTOs\\UserDto.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "ImageDesign.Core\\DTOs\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T19:08:37.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\Entities\\Role.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\Role.cs",
+              "RelativeToolTip": "ImageDesign.Core\\Entities\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:03:44.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "RegisterModel.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Models\\RegisterModel.cs",
+              "RelativeDocumentMoniker": "ImageDesign.API\\Models\\RegisterModel.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Models\\RegisterModel.cs",
+              "RelativeToolTip": "ImageDesign.API\\Models\\RegisterModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T16:03:04.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "UserPostModel.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Models\\UserPostModel.cs",
               "RelativeDocumentMoniker": "ImageDesign.API\\Models\\UserPostModel.cs",
@@ -470,46 +736,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AlbumsDto.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\AlbumsDto.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\DTOs\\AlbumsDto.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\AlbumsDto.cs",
-              "RelativeToolTip": "ImageDesign.Core\\DTOs\\AlbumsDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 29,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\DTOs\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "ImageDesign.Core\\DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T19:09:52.612Z",
+              "WhenOpened": "2025-03-16T19:13:17.604Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "RepositoryManager.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\RepositoryManager.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Data\\Repositories\\RepositoryManager.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\RepositoryManager.cs",
-              "RelativeToolTip": "ImageDesign.Data\\Repositories\\RepositoryManager.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T22:18:26.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PhotoService.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\PhotoService.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Server\\PhotoService.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\PhotoService.cs",
-              "RelativeToolTip": "ImageDesign.Server\\PhotoService.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAkwCwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T19:22:44.171Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 30,
               "Title": "LoginRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\LoginRequestDto.cs",
               "RelativeDocumentMoniker": "ImageDesign.Core\\DTOs\\LoginRequestDto.cs",
@@ -522,98 +762,568 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\appsettings.json",
-              "RelativeDocumentMoniker": "ImageDesign.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\appsettings.json",
-              "RelativeToolTip": "ImageDesign.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 31,
+              "Title": "RoleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\RoleRepository.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Repositories\\RoleRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\RoleRepository.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Repositories\\RoleRepository.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAwCoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T17:21:39.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IUserService.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\IServices\\IUserService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IUserService.cs",
+              "RelativeToolTip": "ImageDesign.Core\\IServices\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T19:45:41.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UserRoleService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\UserRoleService.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Server\\UserRoleService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\UserRoleService.cs",
+              "RelativeToolTip": "ImageDesign.Server\\UserRoleService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAQwB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T19:06:27.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "UserRoleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\UserRoleRepository.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Repositories\\UserRoleRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\UserRoleRepository.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Repositories\\UserRoleRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T18:04:12.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UploadController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\UploadController.cs",
+              "RelativeDocumentMoniker": "ImageDesign.API\\Controllers\\UploadController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\UploadController.cs",
+              "RelativeToolTip": "ImageDesign.API\\Controllers\\UploadController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T14:02:55.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\USER\\AppData\\Roaming\\Microsoft\\UserSecrets\\73d87ffd-5a1a-46f6-b107-6ba0c59c8bfd\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\73d87ffd-5a1a-46f6-b107-6ba0c59c8bfd\\secrets.json",
+              "ToolTip": "C:\\Users\\USER\\AppData\\Roaming\\Microsoft\\UserSecrets\\73d87ffd-5a1a-46f6-b107-6ba0c59c8bfd\\secrets.json",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\73d87ffd-5a1a-46f6-b107-6ba0c59c8bfd\\secrets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-16T21:39:28.21Z",
+              "WhenOpened": "2025-03-29T19:45:13.224Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\AuthService.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Server\\AuthService.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\AuthService.cs",
-              "RelativeToolTip": "ImageDesign.Server\\AuthService.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAqwDIAAAABAAAAAAAAAA==",
+              "DocumentIndex": 37,
+              "Title": "ImageDesign.API.http",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\ImageDesign.API.http",
+              "RelativeDocumentMoniker": "ImageDesign.API\\ImageDesign.API.http",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\ImageDesign.API.http",
+              "RelativeToolTip": "ImageDesign.API\\ImageDesign.API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-03-13T00:49:32.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "DownloadController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\DownloadController.cs",
+              "RelativeDocumentMoniker": "ImageDesign.API\\Controllers\\DownloadController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\DownloadController.cs",
+              "RelativeToolTip": "ImageDesign.API\\Controllers\\DownloadController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA5wB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T23:40:12.001Z",
+              "WhenOpened": "2025-03-19T17:58:03.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Data\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "ImageDesign.Data\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowDoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 39,
+              "Title": "20250327160920_add-field-isDelited-t-photo-and-album.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250327160920_add-field-isDelited-t-photo-and-album.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250327160920_add-field-isDelited-t-photo-and-album.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250327160920_add-field-isDelited-t-photo-and-album.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250327160920_add-field-isDelited-t-photo-and-album.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T19:20:59.775Z",
+              "WhenOpened": "2025-03-27T16:09:20.96Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\UserDto.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\DTOs\\UserDto.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\UserDto.cs",
-              "RelativeToolTip": "ImageDesign.Core\\DTOs\\UserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 40,
+              "Title": "ImageDesign.Data.csproj",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\ImageDesign.Data.csproj",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\ImageDesign.Data.csproj",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\ImageDesign.Data.csproj",
+              "RelativeToolTip": "ImageDesign.Data\\ImageDesign.Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-11T22:31:39.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "PhotoDto.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\PhotoDto.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\DTOs\\PhotoDto.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\PhotoDto.cs",
+              "RelativeToolTip": "ImageDesign.Core\\DTOs\\PhotoDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAvwBIAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T19:08:37.3Z",
+              "WhenOpened": "2025-03-11T19:10:56.796Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\LoginDto.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\DTOs\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\LoginDto.cs",
-              "RelativeToolTip": "ImageDesign.Core\\DTOs\\LoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 42,
+              "Title": "Tag.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\Tag.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\Entities\\Tag.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\Tag.cs",
+              "RelativeToolTip": "ImageDesign.Core\\Entities\\Tag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T19:13:17.604Z",
+              "WhenOpened": "2025-03-12T17:33:54.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 43,
+              "Title": "PhotoPostModel.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Models\\PhotoPostModel.cs",
+              "RelativeDocumentMoniker": "ImageDesign.API\\Models\\PhotoPostModel.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Models\\PhotoPostModel.cs",
+              "RelativeToolTip": "ImageDesign.API\\Models\\PhotoPostModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T16:41:02.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "TagDto.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\TagDto.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\DTOs\\TagDto.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\TagDto.cs",
+              "RelativeToolTip": "ImageDesign.Core\\DTOs\\TagDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:41:52.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "TagPostModel.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Models\\TagPostModel.cs",
+              "RelativeDocumentMoniker": "ImageDesign.API\\Models\\TagPostModel.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Models\\TagPostModel.cs",
+              "RelativeToolTip": "ImageDesign.API\\Models\\TagPostModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T16:40:28.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20250326222621_change-DB-name.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250326222621_change-DB-name.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250326222621_change-DB-name.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250326222621_change-DB-name.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250326222621_change-DB-name.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAswKQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T22:26:22.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "20250326222351_change-DB-name.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250326222351_change-DB-name.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250326222351_change-DB-name.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250326222351_change-DB-name.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250326222351_change-DB-name.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T22:23:51.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ImageDesign.Service.csproj",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\ImageDesign.Service.csproj",
+              "RelativeDocumentMoniker": "ImageDesign.Server\\ImageDesign.Service.csproj",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\ImageDesign.Service.csproj",
+              "RelativeToolTip": "ImageDesign.Server\\ImageDesign.Service.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-12T15:02:26.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "20250326213208_change-one-to-many-in-tag-photo1.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250326213208_change-one-to-many-in-tag-photo1.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250326213208_change-one-to-many-in-tag-photo1.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250326213208_change-one-to-many-in-tag-photo1.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250326213208_change-one-to-many-in-tag-photo1.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T21:32:08.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "TagController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\TagController.cs",
+              "RelativeDocumentMoniker": "ImageDesign.API\\Controllers\\TagController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\TagController.cs",
+              "RelativeToolTip": "ImageDesign.API\\Controllers\\TagController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwDgAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T17:01:30.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "TagService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\TagService.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Server\\TagService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\TagService.cs",
+              "RelativeToolTip": "ImageDesign.Server\\TagService.cs",
+              "ViewState": "AgIAAB4AAADAnJmZmVklwDkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T15:14:47.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "TagRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\TagRepository.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Repositories\\TagRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\TagRepository.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Repositories\\TagRepository.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAuwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T22:16:10.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ITagService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\ITagService.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\IServices\\ITagService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\ITagService.cs",
+              "RelativeToolTip": "ImageDesign.Core\\IServices\\ITagService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:42:40.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ITagRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\ITagRepository.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\IRepositories\\ITagRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\ITagRepository.cs",
+              "RelativeToolTip": "ImageDesign.Core\\IRepositories\\ITagRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:42:20.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "AuthResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\AuthResponseDto.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\DTOs\\AuthResponseDto.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\AuthResponseDto.cs",
+              "RelativeToolTip": "ImageDesign.Core\\DTOs\\AuthResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T19:13:58.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "IService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IService.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\IServices\\IService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IService.cs",
+              "RelativeToolTip": "ImageDesign.Core\\IServices\\IService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T22:01:42.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Permission.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\Permission.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\Entities\\Permission.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\Permission.cs",
+              "RelativeToolTip": "ImageDesign.Core\\Entities\\Permission.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:03:31.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "AlbumPostModel.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Models\\AlbumPostModel.cs",
+              "RelativeDocumentMoniker": "ImageDesign.API\\Models\\AlbumPostModel.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Models\\AlbumPostModel.cs",
+              "RelativeToolTip": "ImageDesign.API\\Models\\AlbumPostModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T16:39:44.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "RolePermission.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\RolePermission.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\Entities\\RolePermission.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\RolePermission.cs",
+              "RelativeToolTip": "ImageDesign.Core\\Entities\\RolePermission.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:04:19.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IAuthService.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\IServices\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IAuthService.cs",
+              "RelativeToolTip": "ImageDesign.Core\\IServices\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T19:15:25.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "ProfileMapping.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\ProfileMapping.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\ProfileMapping.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\ProfileMapping.cs",
+              "RelativeToolTip": "ImageDesign.Core\\ProfileMapping.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T19:33:59.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "AlbumController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\AppData\\Local\\SourceServer\\1303203551b7da9639543fb01ddc8cff0715d9d86d21f458c0bfa8964d469688\\ImageDesign.Server\\ImageDesign.API\\Controllers\\AlbumController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\1303203551b7da9639543fb01ddc8cff0715d9d86d21f458c0bfa8964d469688\\ImageDesign.Server\\ImageDesign.API\\Controllers\\AlbumController.cs",
+              "ToolTip": "C:\\Users\\USER\\AppData\\Local\\SourceServer\\1303203551b7da9639543fb01ddc8cff0715d9d86d21f458c0bfa8964d469688\\ImageDesign.Server\\ImageDesign.API\\Controllers\\AlbumController.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\SourceServer\\1303203551b7da9639543fb01ddc8cff0715d9d86d21f458c0bfa8964d469688\\ImageDesign.Server\\ImageDesign.API\\Controllers\\AlbumController.cs [Read Only]",
+              "ViewState": "AgIAACYAAAAAAAAAAAD4vzMAAAAMAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T20:14:57.013Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ImageDesign.API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ImageDesign.API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwC0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T16:07:53.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "20250320164218_try_create_db2.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320164218_try_create_db2.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250320164218_try_create_db2.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320164218_try_create_db2.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250320164218_try_create_db2.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:42:18.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "20250320163012_add2-parentId-to-album.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320163012_add2-parentId-to-album.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250320163012_add2-parentId-to-album.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320163012_add2-parentId-to-album.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250320163012_add2-parentId-to-album.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:30:12.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "20250320162924_add1-parentId-to-album.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320162924_add1-parentId-to-album.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250320162924_add1-parentId-to-album.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320162924_add1-parentId-to-album.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250320162924_add1-parentId-to-album.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:29:25.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "20250320162742_remove-parentId-to-album.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320162742_remove-parentId-to-album.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250320162742_remove-parentId-to-album.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320162742_remove-parentId-to-album.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250320162742_remove-parentId-to-album.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:27:42.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "20250320144529_add-parentId-to0album.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320144529_add-parentId-to0album.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250320144529_add-parentId-to0album.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320144529_add-parentId-to0album.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250320144529_add-parentId-to0album.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T14:45:29.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Core\\IRepositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\IUserRepository.cs",
+              "RelativeToolTip": "ImageDesign.Core\\IRepositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T19:44:40.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
               "Title": "ProfileMappingPostModel.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\ProfileMappingPostModel.cs",
               "RelativeDocumentMoniker": "ImageDesign.API\\ProfileMappingPostModel.cs",
               "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\ProfileMappingPostModel.cs",
               "RelativeToolTip": "ImageDesign.API\\ProfileMappingPostModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T21:01:28.336Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Program.cs",
-              "RelativeDocumentMoniker": "ImageDesign.API\\Program.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Program.cs",
-              "RelativeToolTip": "ImageDesign.API\\Program.cs",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAgwJkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 71,
+              "Title": "20250320095802_add-albumschildren.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320095802_add-albumschildren.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250320095802_add-albumschildren.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320095802_add-albumschildren.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250320095802_add-albumschildren.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T00:26:15.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T09:58:02.479Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 72,
+              "Title": "20250320092543_creatr-db.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320092543_creatr-db.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250320092543_creatr-db.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320092543_creatr-db.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250320092543_creatr-db.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T09:25:44.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "20250320091025_create-new-db.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320091025_create-new-db.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250320091025_create-new-db.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320091025_create-new-db.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250320091025_create-new-db.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T09:10:26.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "20250320085032_addParentToAlbumEntityFix.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320085032_addParentToAlbumEntityFix.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250320085032_addParentToAlbumEntityFix.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320085032_addParentToAlbumEntityFix.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250320085032_addParentToAlbumEntityFix.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T08:50:32.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "20250320082155_addParentToAlbumEntity.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320082155_addParentToAlbumEntity.cs",
+              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250320082155_addParentToAlbumEntity.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250320082155_addParentToAlbumEntity.cs",
+              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250320082155_addParentToAlbumEntity.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T08:21:55.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\Repository.cs",
               "RelativeDocumentMoniker": "ImageDesign.Data\\Repositories\\Repository.cs",
@@ -626,33 +1336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IUserService.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\IServices\\IUserService.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IUserService.cs",
-              "RelativeToolTip": "ImageDesign.Core\\IServices\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T19:45:41.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\IRepositories\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\IUserRepository.cs",
-              "RelativeToolTip": "ImageDesign.Core\\IRepositories\\IUserRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T19:44:40.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 77,
               "Title": "IRoleRepository.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\IRoleRepository.cs",
               "RelativeDocumentMoniker": "ImageDesign.Core\\IRepositories\\IRoleRepository.cs",
@@ -665,130 +1349,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "ImageDesign.API\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\UserController.cs",
-              "RelativeToolTip": "ImageDesign.API\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T16:07:53.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ProfileMapping.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\ProfileMapping.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\ProfileMapping.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\ProfileMapping.cs",
-              "RelativeToolTip": "ImageDesign.Core\\ProfileMapping.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T19:33:59.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\DataContext.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Data\\DataContext.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\DataContext.cs",
-              "RelativeToolTip": "ImageDesign.Data\\DataContext.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwB8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T15:27:35.736Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\User.cs",
-              "RelativeToolTip": "ImageDesign.Core\\Entities\\User.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T17:33:27.249Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "RoleRepository.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\RoleRepository.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Data\\Repositories\\RoleRepository.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\RoleRepository.cs",
-              "RelativeToolTip": "ImageDesign.Data\\Repositories\\RoleRepository.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAqwDgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T17:21:39.58Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "20250318012828_fixxx.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250318012828_fixxx.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250318012828_fixxx.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250318012828_fixxx.cs",
-              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250318012828_fixxx.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAwwBMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T01:28:28.84Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "RegisterModel.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Models\\RegisterModel.cs",
-              "RelativeDocumentMoniker": "ImageDesign.API\\Models\\RegisterModel.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Models\\RegisterModel.cs",
-              "RelativeToolTip": "ImageDesign.API\\Models\\RegisterModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T16:03:04.68Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "RolePermission.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\RolePermission.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\Entities\\RolePermission.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\RolePermission.cs",
-              "RelativeToolTip": "ImageDesign.Core\\Entities\\RolePermission.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:04:19.882Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 78,
               "Title": "UserRole.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\UserRole.cs",
               "RelativeDocumentMoniker": "ImageDesign.Core\\Entities\\UserRole.cs",
               "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\UserRole.cs",
               "RelativeToolTip": "ImageDesign.Core\\Entities\\UserRole.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:03:59.445Z"
+              "WhenOpened": "2025-03-16T22:03:59.445Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "UserRoleService.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\UserRoleService.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Server\\UserRoleService.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\UserRoleService.cs",
-              "RelativeToolTip": "ImageDesign.Server\\UserRoleService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAwB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T19:06:27.599Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 79,
               "Title": "IUserRoleRepository.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\IUserRoleRepository.cs",
               "RelativeDocumentMoniker": "ImageDesign.Core\\IRepositories\\IUserRoleRepository.cs",
@@ -796,95 +1370,12 @@
               "RelativeToolTip": "ImageDesign.Core\\IRepositories\\IUserRoleRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T17:11:34.642Z"
+              "WhenOpened": "2025-03-17T17:11:34.642Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "ImageDesign.API.csproj",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\ImageDesign.API.csproj",
-              "RelativeDocumentMoniker": "ImageDesign.API\\ImageDesign.API.csproj",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\ImageDesign.API.csproj",
-              "RelativeToolTip": "ImageDesign.API\\ImageDesign.API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-15T21:27:40.718Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "20250317202655_fix.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250317202655_fix.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250317202655_fix.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250317202655_fix.cs",
-              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250317202655_fix.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T20:26:55.991Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 70,
-              "Title": "20250317202133_fixuser.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250317202133_fixuser.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250317202133_fixuser.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250317202133_fixuser.cs",
-              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250317202133_fixuser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T20:21:33.553Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Tag.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\Tag.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\Entities\\Tag.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\Tag.cs",
-              "RelativeToolTip": "ImageDesign.Core\\Entities\\Tag.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T17:33:54.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "ImageDesign.Service.csproj",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\ImageDesign.Service.csproj",
-              "RelativeDocumentMoniker": "ImageDesign.Server\\ImageDesign.Service.csproj",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\ImageDesign.Service.csproj",
-              "RelativeToolTip": "ImageDesign.Server\\ImageDesign.Service.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-12T15:02:26.442Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "20250315215001_createDb.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250315215001_createDb.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250315215001_createDb.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250315215001_createDb.cs",
-              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250315215001_createDb.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAQwGwAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T21:50:01.427Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "20250317195412_JWT.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250317195412_JWT.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Data\\Migrations\\20250317195412_JWT.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Migrations\\20250317195412_JWT.cs",
-              "RelativeToolTip": "ImageDesign.Data\\Migrations\\20250317195412_JWT.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T19:54:12.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 80,
               "Title": "IUserRoleService.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IUserRoleService.cs",
               "RelativeDocumentMoniker": "ImageDesign.Core\\IServices\\IUserRoleService.cs",
@@ -892,47 +1383,12 @@
               "RelativeToolTip": "ImageDesign.Core\\IServices\\IUserRoleService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T17:18:44.513Z"
+              "WhenOpened": "2025-03-17T17:18:44.513Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "Permission.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\Permission.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\Entities\\Permission.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\Permission.cs",
-              "RelativeToolTip": "ImageDesign.Core\\Entities\\Permission.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:03:31.419Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\Role.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\Entities\\Role.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\Role.cs",
-              "RelativeToolTip": "ImageDesign.Core\\Entities\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:03:44.523Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "TagService.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\TagService.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Server\\TagService.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Server\\TagService.cs",
-              "RelativeToolTip": "ImageDesign.Server\\TagService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T15:14:47.303Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 81,
               "Title": "ITokenService.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\ITokenService.cs",
               "RelativeDocumentMoniker": "ImageDesign.Core\\IServices\\ITokenService.cs",
@@ -940,47 +1396,12 @@
               "RelativeToolTip": "ImageDesign.Core\\IServices\\ITokenService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T19:24:34.073Z"
+              "WhenOpened": "2025-03-16T19:24:34.073Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IAuthService.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\IServices\\IAuthService.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IAuthService.cs",
-              "RelativeToolTip": "ImageDesign.Core\\IServices\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T19:15:25.664Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "AuthResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\AuthResponseDto.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\DTOs\\AuthResponseDto.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\AuthResponseDto.cs",
-              "RelativeToolTip": "ImageDesign.Core\\DTOs\\AuthResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T19:13:58.255Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "Photo.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\Photo.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\Entities\\Photo.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\Entities\\Photo.cs",
-              "RelativeToolTip": "ImageDesign.Core\\Entities\\Photo.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAYwBkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T17:33:46.798Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 82,
               "Title": "dbo.Users.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ImageDesign/True/SqlTable/dbo.Users.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ImageDesign/True/SqlTable/dbo.Users.sql",
@@ -989,79 +1410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "TagRepository.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\TagRepository.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Data\\Repositories\\TagRepository.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\TagRepository.cs",
-              "RelativeToolTip": "ImageDesign.Data\\Repositories\\TagRepository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAIwC0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T22:16:10.964Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "PhotoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\PhotoRepository.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Data\\Repositories\\PhotoRepository.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Data\\Repositories\\PhotoRepository.cs",
-              "RelativeToolTip": "ImageDesign.Data\\Repositories\\PhotoRepository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAIwDcAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T19:20:42.717Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "TagController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\TagController.cs",
-              "RelativeDocumentMoniker": "ImageDesign.API\\Controllers\\TagController.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\TagController.cs",
-              "RelativeToolTip": "ImageDesign.API\\Controllers\\TagController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAA3wEIAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T17:01:30.16Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "PhotoDto.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\PhotoDto.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\DTOs\\PhotoDto.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\PhotoDto.cs",
-              "RelativeToolTip": "ImageDesign.Core\\DTOs\\PhotoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T19:10:56.796Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "TagDto.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\TagDto.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\DTOs\\TagDto.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\DTOs\\TagDto.cs",
-              "RelativeToolTip": "ImageDesign.Core\\DTOs\\TagDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T21:41:52.544Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "TagPostModel.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Models\\TagPostModel.cs",
-              "RelativeDocumentMoniker": "ImageDesign.API\\Models\\TagPostModel.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Models\\TagPostModel.cs",
-              "RelativeToolTip": "ImageDesign.API\\Models\\TagPostModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T16:40:28.449Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 84,
               "Title": "IRepositoryManager.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\IRepositoryManager.cs",
               "RelativeDocumentMoniker": "ImageDesign.Core\\IRepositories\\IRepositoryManager.cs",
@@ -1069,11 +1418,12 @@
               "RelativeToolTip": "ImageDesign.Core\\IRepositories\\IRepositoryManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T21:55:23.593Z"
+              "WhenOpened": "2025-03-11T21:55:23.593Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 83,
               "Title": "ImageDesign.Core.csproj",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\ImageDesign.Core.csproj",
               "RelativeDocumentMoniker": "ImageDesign.Core\\ImageDesign.Core.csproj",
@@ -1081,83 +1431,12 @@
               "RelativeToolTip": "ImageDesign.Core\\ImageDesign.Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-11T19:18:33.813Z"
+              "WhenOpened": "2025-03-11T19:18:33.813Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "ITagService.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\ITagService.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\IServices\\ITagService.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\ITagService.cs",
-              "RelativeToolTip": "ImageDesign.Core\\IServices\\ITagService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T21:42:40.042Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "ITagRepository.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\ITagRepository.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\IRepositories\\ITagRepository.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\ITagRepository.cs",
-              "RelativeToolTip": "ImageDesign.Core\\IRepositories\\ITagRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T21:42:20.642Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "IService.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IService.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\IServices\\IService.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IService.cs",
-              "RelativeToolTip": "ImageDesign.Core\\IServices\\IService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T22:01:42.877Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "IPhotoService.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IPhotoService.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\IServices\\IPhotoService.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IServices\\IPhotoService.cs",
-              "RelativeToolTip": "ImageDesign.Core\\IServices\\IPhotoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T19:46:39.669Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "ImageDesign.API.http",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\ImageDesign.API.http",
-              "RelativeDocumentMoniker": "ImageDesign.API\\ImageDesign.API.http",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\ImageDesign.API.http",
-              "RelativeToolTip": "ImageDesign.API\\ImageDesign.API.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-03-13T00:49:32.08Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 67,
-              "Title": "PhotoController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\PhotoController.cs",
-              "RelativeDocumentMoniker": "ImageDesign.API\\Controllers\\PhotoController.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.API\\Controllers\\PhotoController.cs",
-              "RelativeToolTip": "ImageDesign.API\\Controllers\\PhotoController.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAwEIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T17:01:51.365Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 85,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\IRepository.cs",
               "RelativeDocumentMoniker": "ImageDesign.Core\\IRepositories\\IRepository.cs",
@@ -1165,19 +1444,8 @@
               "RelativeToolTip": "ImageDesign.Core\\IRepositories\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T21:54:49.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 69,
-              "Title": "IPhotoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\IPhotoRepository.cs",
-              "RelativeDocumentMoniker": "ImageDesign.Core\\IRepositories\\IPhotoRepository.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ImageDesign\\ImageDesign.Server\\ImageDesign.Core\\IRepositories\\IPhotoRepository.cs",
-              "RelativeToolTip": "ImageDesign.Core\\IRepositories\\IPhotoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T19:45:00.267Z"
+              "WhenOpened": "2025-03-11T21:54:49.082Z",
+              "EditorCaption": ""
             }
           ]
         }

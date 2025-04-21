@@ -1,11 +1,12 @@
 ﻿using AutoMapper;
 using ImageDesign.API.Models;
 using ImageDesign.Core.DTOs;
+using ImageDesign.Core.Entities;
 using ImageDesign.Core.IServices;
 using ImageDesign.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using System.Security.Claims;
 
 namespace ImageDesign.API.Controllers
 {
@@ -22,9 +23,9 @@ namespace ImageDesign.API.Controllers
             _mapper = mapper;
         }
 
-
         // GET: api/<AlbumController>
         [HttpGet]
+        //[Authorize] // דרישת טוקן
         public async Task<ActionResult<IEnumerable<AlbumsDto>>> Get()
         {
             var albums = await _albumService.GetAllAlbumsAsync();
@@ -32,9 +33,9 @@ namespace ImageDesign.API.Controllers
             return Ok(albumsDto);
         }
 
-
         // GET api/<AlbumController>/5
         [HttpGet("{id}")]
+        //[Authorize] // דרישת טוקן
         public async Task<ActionResult<AlbumsDto>> Get(int id)
         {
             var album = await _albumService.GetAlbumByIdAsync(id);
@@ -42,43 +43,60 @@ namespace ImageDesign.API.Controllers
             return Ok(albumDto);
         }
 
-
         // POST api/<AlbumController>
         [HttpPost]
+        //[Authorize] // דרישת טוקן
         public async Task<ActionResult> Post([FromBody] AlbumPostModel album)
         {
+            // שליפת ה-userId מה-token
+            //var userIdString = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-            if (album == null) return null;
+            //if (userIdString == null || !int.TryParse(userIdString, out int userId))
+            //{
+            //    return BadRequest("User ID is not valid.");
+            //}
+
+            if (album == null) return BadRequest("Album data is required.");
+
             var albumdto = _mapper.Map<AlbumsDto>(album);
+            albumdto.UserId = album.UserId;
+
             var result = await _albumService.AddAlbumAsync(albumdto);
             if (result == null)
-                return null;
+                return BadRequest("Failed to add album.");
+
             return Ok(result);
         }
 
 
         // PUT api/<AlbumController>/5
         [HttpPut("{id}")]
+        //[Authorize] // דרישת טוקן
         public async Task<ActionResult> Put(int id, [FromBody] AlbumPostModel album)
         {
             if (id < 0 || album == null) return null;
             var success = await _albumService.UpdateAlbumAsync(id, _mapper.Map<AlbumsDto>(album));
             if (success == null) return null;
-            return Ok(success.Id);
+            //return Ok(success.Id);
+            return Ok(success);
         }
-
 
         // DELETE api/<AlbumController>/5
         [HttpDelete("{id}")]
+        //[Authorize] // דרישת טוקן
         public async Task<ActionResult> Delete(int id)
         {
-            if (id < 0) return BadRequest();
+            if (id < 1 ) 
+                return BadRequest();
             bool success = await _albumService.DeleteAlbumAsync(id);
-            if (!success) return NotFound();
+            if (!success) 
+                return NotFound();
             return Ok(success);
         }
-        //שליפת תמונות מהאלבום
+
+        // שליפת תמונות מהאלבום
         [HttpGet("{albumId}/images")]
+        //[Authorize] // דרישת טוקן
         public async Task<IActionResult> GetImagesByAlbumId(int albumId)
         {
             var images = await _albumService.GetImagesByAlbumIdAsync(albumId);
@@ -90,9 +108,9 @@ namespace ImageDesign.API.Controllers
             return Ok(images);
         }
 
-        //שליפת האלבומים לפי UserId
+        // שליפת האלבומים לפי UserId
         [HttpGet("user/{userId}")]
-
+        //[Authorize] // דרישת טוקן
         public async Task<IActionResult> GetAlbumsByUserId(int userId)
         {
             var albums = await _albumService.GetAlbumsByUserIdAsync(userId);
@@ -103,5 +121,34 @@ namespace ImageDesign.API.Controllers
 
             return Ok(albums);
         }
+        //[HttpGet("children/{parentId}")]
+        //public async Task<IActionResult> GetChildAlbums(int parentId)
+        //{
+
+        //    var childAlbums = await _albumService.GetChildAlbumsAsync(parentId);
+        //    if (childAlbums == null || !childAlbums.Any())
+        //    {
+        //        return NotFound("לא נמצאו תקיות עבור האלבום האב.");
+        //    }
+
+        //    return Ok(childAlbums);
+        //}
+
+
+
+
+
+        [HttpGet("user/{userId}/photos")]
+        public async Task<ActionResult<IEnumerable<PhotoDto>>> GetAllPhotosByUserId(int userId)
+        {
+            var photos = await _albumService.GetAllPhotosByUserIdAsync(userId);
+
+            if (photos == null || !photos.Any())
+                return NotFound($"No photos found for user with ID {userId}");
+
+            return Ok(photos);
+        }
+
+
     }
 }

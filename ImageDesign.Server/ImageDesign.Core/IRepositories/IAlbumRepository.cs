@@ -18,5 +18,12 @@ namespace ImageDesign.Core.IRepositories
         Task<IEnumerable<Photo>> GetImagesByAlbumIdAsync(int albumId);
         Task<IEnumerable<Album>> GetAlbumsByUserIdAsync(int userId);
 
+        //Task<ICollection<Album>> GetAlbumsByParentAsync(int parentId, int userId);
+        //Task<IEnumerable<Album>> GetChildAlbumsAsync(int parentId);
+
+
+
+        public Task<IEnumerable<Photo>> GetAllPhotosByUserIdAsync(int userId);
+
     }
 }
