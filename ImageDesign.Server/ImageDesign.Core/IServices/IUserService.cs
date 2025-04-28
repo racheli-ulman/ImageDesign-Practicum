@@ -16,5 +16,7 @@ namespace ImageDesign.Core.IServices
         Task<bool> DeleteUserAsync(int id);
         Task<UserDto> GetUserByEmailAsync(string email);
         Task<string> AuthenticateAsync(string email, string password);
+        Task<IEnumerable<MonthlyRegistrationsDto>> GetMonthlyRegistrationsAsync();
+
     }
 }

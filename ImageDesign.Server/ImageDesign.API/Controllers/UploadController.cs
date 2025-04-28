@@ -20,6 +20,7 @@ namespace ImageDesign.API.Controllers
         [HttpGet("presigned-url")]
         public async Task<IActionResult> GetPresignedUrl([FromQuery] string fileName)
         {
+            
             var request = new GetPreSignedUrlRequest
             {
                 BucketName = "imagedsignapplication",

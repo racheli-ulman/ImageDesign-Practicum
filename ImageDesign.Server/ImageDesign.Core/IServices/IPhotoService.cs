@@ -18,6 +18,8 @@ namespace ImageDesign.Core.IServices
         Task<IEnumerable<PhotoDto>> GetPhotosByAlbumIdAsync(int albumId);
         Task<PhotoDto> CopyPhotoToAlbumAsync(int photoId, int targetAlbumId);
         Task<PhotoDto> MovePhotoToAlbumAsync(int photoId, int sourceAlbumId, int targetAlbumId);
+        Task<IEnumerable<PhotoDto>> GetDeletedPhotosAsync();
+
 
     }
 }

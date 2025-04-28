@@ -71,5 +71,14 @@ namespace ImageDesign.API.Controllers
             if (!success) return NotFound();
             return Ok(success);
         }
+
+
+        [HttpGet("registrations-per-month")]
+        public async Task<ActionResult<IEnumerable<MonthlyRegistrationsDto>>> GetMonthlyRegistrations()
+        {
+            var registrations = await _userService.GetMonthlyRegistrationsAsync();
+            return Ok(registrations);
+        }
+
     }
 }

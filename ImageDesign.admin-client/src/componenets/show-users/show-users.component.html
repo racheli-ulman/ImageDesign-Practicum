@@ -1,0 +1,33 @@
+<div class="user-list">
+    <h2>רשימת משתמשים</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>מספר מזהה</th>
+                <th>שם פרטי</th>
+                <th>שם משפחה</th>
+                <th>אימייל</th>
+                <!-- <th>מספר טלפון</th> -->
+                <!-- <th>פעולות</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{ user.id }}</td>
+                <td>{{ user.firstName }}</td>
+                <td>{{ user.lastName }}</td>
+                <td>{{ user.email }}</td>
+                <!-- <td>{{ user.phoneNumber || 'לא זמין' }}</td> -->
+
+
+                <td>
+                    <!-- <button (click)="editUser(user.id)">ערוך</button> -->
+                    <button (click)="delete(user.id)">מחק</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div *ngIf="errorMessage" class="error-message">
+        {{ errorMessage }}
+    </div>
+</div>

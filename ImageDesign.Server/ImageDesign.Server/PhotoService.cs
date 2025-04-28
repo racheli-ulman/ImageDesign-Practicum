@@ -61,6 +61,7 @@ namespace ImageDesign.Service
 
         public async Task<bool> DeletePhotoAsync(int id)
         {
+            
             await _repositoryManager.saveAsync();
             return await _repositoryManager.PhotoM.DeletePhotoAsync(id);
         }
@@ -72,8 +73,22 @@ namespace ImageDesign.Service
 
             return _mapper.Map<IEnumerable<PhotoDto>>(getPhotes);
         }
-
-
+        //סל המחזור 
+        //public async Task<IEnumerable<PhotoDto>> GetPhotosByAlbumIdAsync(int albumId)
+        //{
+ 
+        //    var getPhotes = await _repositoryManager.PhotoM.GetPhotosByAlbumIdAsync(albumId);
+        //    var photos = new List<Photo>();
+        //    foreach (var photo in getPhotes)
+        //    {
+        //        if (!photo.IsDeleted)
+        //        {
+        //            photos.Add(photo);
+        //            photo.IsDeleted = true;
+        //        }
+        //    }
+        //    return _mapper.Map<IEnumerable<PhotoDto>>(photos);
+        //}
 
 
 
@@ -104,6 +119,12 @@ namespace ImageDesign.Service
             return _mapper.Map<PhotoDto>(updatedPhoto);
         }
 
+        public async Task<IEnumerable<PhotoDto>> GetDeletedPhotosAsync()
+        {
+            var deletedPhotos = await _repositoryManager.PhotoM.GetAllPhotosAsync();
+            var result = deletedPhotos.Where(photo => photo.IsDeleted);
+            return _mapper.Map<IEnumerable<PhotoDto>>(result);
+        }
 
     }
 }

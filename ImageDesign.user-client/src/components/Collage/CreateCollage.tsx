@@ -126,12 +126,14 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
         await new Promise<void>((resolve, reject) => {
           img.onload = () => resolve();
           img.onerror = () => {
+
             console.error(`Failed to load image: ${photo.photoPath}`);
             failedIndices.push(i);
             resolve(); // Continue with other images even if this one fails
           };
           
           // Try to load with cache busting to avoid CORS issues
+        
           img.src = `${photo.photoPath}${photo.photoPath.includes('?') ? '&' : '?'}cacheBust=${new Date().getTime()}`;
           
           // Set a timeout in case the image takes too long to load

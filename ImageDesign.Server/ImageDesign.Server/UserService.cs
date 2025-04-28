@@ -92,5 +92,22 @@ namespace ImageDesign.Service
         }
 
 
+        public async Task<IEnumerable<MonthlyRegistrationsDto>> GetMonthlyRegistrationsAsync()
+        {
+            var users = await _userRepository.GetAllUsersAsync();
+            var monthlyRegistrations = users
+                .GroupBy(u => new { u.CreatedAt.Year, u.CreatedAt.Month })
+                .Select(g => new MonthlyRegistrationsDto
+                {
+                    Year = g.Key.Year,
+                    Month = g.Key.Month,
+                    Count = g.Count()
+                }).ToList();
+
+            return monthlyRegistrations;
+        }
+
+
     }
+
 }

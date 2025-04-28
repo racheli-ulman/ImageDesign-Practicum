@@ -84,6 +84,8 @@ namespace ImageDesign.API.Controllers
             var token = _authService.GenerateJwtToken(model.Email, new[] { model.RoleName });
             return Ok(new { Token = token, User = existingUser });
         }
+
+
     }
 
     public class LoginModel

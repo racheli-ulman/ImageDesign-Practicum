@@ -192,6 +192,7 @@
 
 import { makeAutoObservable } from "mobx";
 import { Album } from "../models/Album";
+import api from "../components/api";
 import axios from "axios";
 
 class AlbumStore {
@@ -254,7 +255,7 @@ class AlbumStore {
     };
 
     try {
-      const response = await axios.post(`http://localhost:5083/api/Album`, newAlbum);
+      const response = await api.post(`/Album`, newAlbum);
       this.setAlbums([...this.albums, response.data]);
       this.setError(null);
     } catch (err: any) {
@@ -274,7 +275,7 @@ class AlbumStore {
     console.log("Album to update:", albumToUpdate);
     console.log("Album ID to update:", updatedAlbum.id);
     try {
-      const response = await axios.put(`http://localhost:5083/api/Album/${updatedAlbum.id}`, albumToUpdate);
+      const response = await api.put(`/Album/${updatedAlbum.id}`, albumToUpdate);
       this.setAlbums(this.albums.map(album =>
         album.id === updatedAlbum.id ? response.data : album
       ));
@@ -286,7 +287,7 @@ class AlbumStore {
 
   async deleteAlbum(albumId: number) {
     try {
-      const response = await axios.delete(`http://localhost:5083/api/Album/${albumId}`);
+      const response = await api.delete(`/Album/${albumId}`);
       if (response.status === 200) {
         this.setAlbums(this.albums.filter(album => album.id !== albumId));
       }

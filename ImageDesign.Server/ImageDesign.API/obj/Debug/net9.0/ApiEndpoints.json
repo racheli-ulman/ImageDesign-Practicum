@@ -362,6 +362,26 @@
   },
   {
     "ContainingType": "ImageDesign.API.Controllers.PhotoController",
+    "Method": "GetDeletedPhotos",
+    "RelativePath": "api/Photo/deleted",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ImageDesign.Core.DTOs.PhotoDto, ImageDesign.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ImageDesign.API.Controllers.PhotoController",
     "Method": "MovePhotoToAlbum",
     "RelativePath": "api/Photo/move/{photoId}/from-album/{sourceAlbumId}/to-album/{targetAlbumId}",
     "HttpMethod": "PUT",
@@ -599,6 +619,26 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ImageDesign.API.Controllers.UserController",
+    "Method": "GetMonthlyRegistrations",
+    "RelativePath": "api/User/registrations-per-month",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ImageDesign.Core.DTOs.MonthlyRegistrationsDto, ImageDesign.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "ImageDesign.API.Controllers.WeatherForecastController",

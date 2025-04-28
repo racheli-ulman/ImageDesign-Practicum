@@ -41,8 +41,9 @@ const PhotoGrid: React.FC<PhotoGridProps> = ({ photos, onPhotoClick, onCopyMoveC
 
     const handleDelete = async (photoId: number) => {
         try {
-            photoUploadStore.photos = photoUploadStore.photos.filter(photo => photo.id !== photoId);
+            
             await photoUploadStore.deletePhoto(photoId);
+            // photoUploadStore.photos = photoUploadStore.photos.filter(photo => photo.id !== photoId);
         } catch (error) {
             console.error('שגיאה במחיקת התמונה:', error);
             alert('שגיאה במחיקת התמונה');

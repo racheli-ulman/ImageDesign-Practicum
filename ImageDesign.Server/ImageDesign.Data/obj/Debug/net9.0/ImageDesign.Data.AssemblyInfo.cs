@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImageDesign.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d682631e894b902c8881ed4e7396a3c342e0e61")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2e60e14e4b6d24fe272bb5680374e71e46d597b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImageDesign.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImageDesign.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

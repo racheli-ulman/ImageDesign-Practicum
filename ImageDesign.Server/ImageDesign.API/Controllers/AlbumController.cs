@@ -71,7 +71,7 @@ namespace ImageDesign.API.Controllers
 
         // PUT api/<AlbumController>/5
         [HttpPut("{id}")]
-        //[Authorize] // דרישת טוקן
+        [Authorize] // דרישת טוקן
         public async Task<ActionResult> Put(int id, [FromBody] AlbumPostModel album)
         {
             if (id < 0 || album == null) return null;
@@ -83,7 +83,7 @@ namespace ImageDesign.API.Controllers
 
         // DELETE api/<AlbumController>/5
         [HttpDelete("{id}")]
-        //[Authorize] // דרישת טוקן
+        [Authorize] // דרישת טוקן
         public async Task<ActionResult> Delete(int id)
         {
             if (id < 1 ) 

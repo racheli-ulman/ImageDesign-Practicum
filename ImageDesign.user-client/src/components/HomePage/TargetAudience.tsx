@@ -30,7 +30,7 @@ function TargetAudience() {
     },
     {
       title: 'אמהות',
-      description: 'שמרו על רגעי הילדות היקרים מאורגנים וזמינים לשיתוף עם המשפחה המורחבת.',
+      description: 'שמרו על רגעי הילדים היקרים מאורגנים וזמינים לשיתוף עם המשפחה המורחבת.',
       icon: <PregnantWomanIcon fontSize="large" />,
     },
     {

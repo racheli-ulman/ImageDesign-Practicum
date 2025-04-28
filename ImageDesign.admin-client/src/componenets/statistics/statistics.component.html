@@ -1,0 +1,11 @@
+<div class="statistics">
+    <h2>סטטיסטיקות נרשמים חודשיים</h2>
+    <div style="display: block;">
+        <canvas baseChart
+                [datasets]="chartData.datasets"
+                [labels]="chartData.labels"
+                [options]="chartOptions"
+                chartType="line"> <!-- הסר את הסוגריים -->
+        </canvas>
+    </div>
+</div>

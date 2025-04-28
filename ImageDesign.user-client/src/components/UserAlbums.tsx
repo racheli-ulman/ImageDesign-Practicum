@@ -1,333 +1,3 @@
-// import { observer } from "mobx-react-lite";
-// import React, { useEffect, useState } from "react";
-// import { useNavigate } from "react-router-dom";
-// import albumStore from "../stores/albumStore";
-// import CreateNewAlbum from "./CreateNewAlbum";
-// import { SelectedAlbum } from "../models/Album";
-// import userStore from "../stores/userStore";
-// import { Album } from "../models/Album";
-// import {
-//   Box,
-//   Button,
-//   Dialog,
-//   DialogActions,
-//   DialogContent,
-//   DialogTitle,
-//   IconButton,
-//   InputBase,
-//   Paper,
-//   Typography,
-//   TextField,
-// } from "@mui/material";
-// import CloseIcon from "@mui/icons-material/Close";
-// import AddIcon from "@mui/icons-material/Add";
-// import EditIcon from "@mui/icons-material/Edit";
-// import DeleteIcon from "@mui/icons-material/Delete";
-
-// const UserAlbums: React.FC = () => {
-//   const navigate = useNavigate();
-//   const userId = userStore.user?.user?.id ?? null;
-//   const [loading, setLoading] = useState<boolean>(true);
-//   const [error, setError] = useState<string | null>(null);
-//   const [openCreateModal, setOpenCreateModal] = useState<boolean>(false);
-//   const [openEditModal, setOpenEditModal] = useState<boolean>(false);
-//   const [openDeleteModal, setOpenDeleteModal] = useState<boolean>(false);
-//   const [selectedAlbum, setSelectedAlbum] = useState<SelectedAlbum | null>(null);
-//   const [newAlbumName, setNewAlbumName] = useState<string>("");
-//   const [searchTerm, setSearchTerm] = useState<string>("");
-
-//   useEffect(() => {
-//     const fetchAlbums = async () => {
-//       if (userId) {
-//         try {
-//           await albumStore.fetchAlbums(userId);
-//           setLoading(false);
-//         } catch (err: any) {
-//           setError(err.message);
-//           setLoading(false);
-//         }
-//       }
-//     };
-
-//     fetchAlbums();
-//   }, [userId]);
-
-//   const handleAlbumClick = (albumId: number) => {
-//     navigate(`/add-photo`);
-//   };
-
-//   const handleEditAlbum = async (e: React.FormEvent) => {
-//     e.preventDefault();
-//     if (!selectedAlbum) return;
-
-//     try {
-//       const updatedAlbum = {
-//         id: selectedAlbum.id,
-//         albumName: newAlbumName,
-//       };
-
-//       setOpenEditModal(false);
-//       setSelectedAlbum(null);
-//       setNewAlbumName("");
-//     } catch (err: any) {
-//       setError(err.message);
-//     }
-//   };
-
-//   const handleDeleteAlbum = async () => {
-//     if (!selectedAlbum) return;
-
-//     try {
-//       await albumStore.deleteAlbum(selectedAlbum.id);
-//       setOpenDeleteModal(false);
-//       setSelectedAlbum(null);
-//     } catch (err: any) {
-//       setError(err.message);
-//     }
-//   };
-
-//   const openEditAlbumModal = (album: Album) => {
-//     setSelectedAlbum({ id: album.id, name: album.albumName });
-//     setNewAlbumName(album.albumName);
-//     setOpenEditModal(true);
-//   };
-
-//   const openDeleteAlbumModal = (album: Album) => {
-//     setSelectedAlbum({ id: album.id, name: album.albumName });
-//     setOpenDeleteModal(true);
-//   };
-
-//   const filteredAlbums = albumStore.albums.filter((album) =>
-//     album.albumName.toLowerCase().includes(searchTerm.toLowerCase())
-//   );
-
-//   if (loading) return <div>טוען...</div>;
-//   if (error) return <div>שגיאה: {error}</div>;
-
-//   return (
-//     <Box sx={{ padding: 2, height: "100vh", overflow: "hidden" }}>
-//       <Typography variant="h4" sx={{ marginBottom: 2, textAlign: "center" }}>
-//         האלבומים שלי
-//       </Typography>
-
-//       <Box sx={{ display: "flex", justifyContent: "flex-start", marginBottom: 2 }}>
-//         <Button
-//           variant="contained"
-//           startIcon={<AddIcon />}
-//           onClick={() => setOpenCreateModal(true)}
-//           sx={{ backgroundColor: "#556b9b", "&:hover": { backgroundColor: "#455a8a" } }}
-//         >
-//           הוספת תיקיה חדשה
-//         </Button>
-//       </Box>
-
-//       <Box sx={{ marginBottom: 2 }}>
-//         <TextField
-//           variant="outlined"
-//           fullWidth
-//           placeholder="חפש תיקיה...🔍"
-//           value={searchTerm}
-//           onChange={(e) => setSearchTerm(e.target.value)}
-//         />
-//       </Box>
-
-//       <Box
-//         sx={{
-//           display: "grid",
-//           gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", // הגדלת הגודל המינימלי של הריבועים
-//           gap: 2,
-//           marginBottom: 4,
-//           height: "calc(100% - 200px)", // הגדרת גובה מקסימלי כדי למנוע גלילה
-//           overflow: "auto",
-//         }}
-//       >
-//         {filteredAlbums.map((album) => (
-//           <Paper
-//             key={album.id}
-//             sx={{
-//               padding: 0,
-//               textAlign: "center",
-//               cursor: "pointer",
-//               transition: "transform 0.2s, box-shadow 0.2s",
-//               position: "relative",
-//               width: 200, // הגדלת רוחב הריבוע
-//               height: 200, // הגדלת גובה הריבוע
-//               display: "flex",
-//               flexDirection: "column",
-//               justifyContent: "center",
-//               alignItems: "center",
-//               "&:hover": {
-//                 transform: "translateY(-5px)",
-//                 boxShadow: "0 5px 15px rgba(0,0,0,0.1)",
-//               },
-//               "&:hover .folder-actions": {
-//                 visibility: "visible",
-//                 opacity: 1,
-//               },
-//             }}
-//             onClick={() => handleAlbumClick(album.id)}
-//           >
-//             <Box sx={{ fontSize: 80, color: "#f8d775", marginBottom: 1 }}>📁</Box> {/* הגדלת האייקון */}
-//             <Typography variant="h6" sx={{ fontWeight: 500, whiteSpace: "nowrap", textOverflow: "ellipsis", overflow: "hidden", width: "100%", textAlign: "center" }}>
-//               {album.albumName}
-//             </Typography>
-//             <Box className="folder-actions" sx={{ display: "flex", justifyContent: "center", gap: 1, visibility: "hidden", opacity: 0, transition: "visibility 0s, opacity 0.2s" }}>
-//               <IconButton
-//                 onClick={(e) => {
-//                   e.stopPropagation();
-//                   openEditAlbumModal(album);
-//                 }}
-//               >
-//                 <EditIcon sx={{ color: "#5bc0de" }} />
-//               </IconButton>
-//               <IconButton
-//                 onClick={(e) => {
-//                   e.stopPropagation();
-//                   openDeleteAlbumModal(album);
-//                 }}
-//               >
-//                 <DeleteIcon sx={{ color: "#d9534f" }} />
-//               </IconButton>
-//             </Box>
-//           </Paper>
-//         ))}
-//       </Box>
-
-//       {openCreateModal && <CreateNewAlbum onClose={() => setOpenCreateModal(false)} />}
-
-//       {openEditModal && selectedAlbum && (
-//         <Dialog open onClose={() => setOpenEditModal(false)}>
-//           <Paper sx={{ padding: 2, width: 400 }}>
-//             <DialogTitle>
-//               <Box display="flex" justifyContent="space-between" alignItems="center">
-//                 <Typography variant="h6">עריכת שם תיקיה</Typography>
-//                 <IconButton onClick={() => setOpenEditModal(false)}>
-//                   <CloseIcon />
-//                 </IconButton>
-//               </Box>
-//             </DialogTitle>
-//             <DialogContent>
-//               <form onSubmit={handleEditAlbum}>
-//                 <Box sx={{ marginBottom: 2 }}>
-//                   <Typography sx={{ marginBottom: 1, fontWeight: 500, color: "#555" }}>
-//                     שם התיקיה
-//                   </Typography>
-//                   <InputBase
-//                     fullWidth
-//                     value={newAlbumName}
-//                     onChange={(e) => setNewAlbumName(e.target.value)}
-//                     placeholder="הזן שם חדש לתיקיה"
-//                     required
-//                     sx={{ padding: 1, border: "1px solid #ddd", borderRadius: 1 }}
-//                   />
-//                 </Box>
-//                 <DialogActions>
-//                   <Button
-//                     variant="outlined"
-//                     onClick={() => setOpenEditModal(false)}
-//                     sx={{
-//                       flex: 1,
-//                       margin: 1,
-//                       padding: 1,
-//                       fontSize: 14,
-//                       backgroundColor: "#f5f5f5",
-//                       color: "#333",
-//                       "&:hover": { backgroundColor: "#e5e5e5" },
-//                     }}
-//                   >
-//                     ביטול
-//                   </Button>
-//                   <Button
-//                     type="submit"
-//                     variant="contained"
-//                     sx={{
-//                       flex: 1,
-//                       margin: 1,
-//                       padding: 1,
-//                       fontSize: 14,
-//                       backgroundColor: "#556b9b",
-//                       color: "white",
-//                       "&:hover": {
-//                         backgroundColor: "#455a8a",
-//                         transform: "translateY(-2px)",
-//                       },
-//                     }}
-//                   >
-//                     עדכון
-//                   </Button>
-//                 </DialogActions>
-//               </form>
-//             </DialogContent>
-//           </Paper>
-//         </Dialog>
-//       )}
-
-//       {openDeleteModal && selectedAlbum && (
-//         <Dialog open onClose={() => setOpenDeleteModal(false)}>
-//           <Paper sx={{ padding: 2, width: 400 }}>
-//             <DialogTitle>
-//               <Box display="flex" justifyContent="space-between" alignItems="center">
-//                 <Typography variant="h6">מחיקת תיקיה</Typography>
-//                 <IconButton onClick={() => setOpenDeleteModal(false)}>
-//                   <CloseIcon />
-//                 </IconButton>
-//               </Box>
-//             </DialogTitle>
-//             <DialogContent>
-//               <Typography>
-//                 האם אתה בטוח שברצונך למחוק את התיקיה "{selectedAlbum.name}"? פעולה זו אינה ניתנת לביטול.
-//               </Typography>
-//               <DialogActions>
-//                 <Button
-//                   variant="outlined"
-//                   onClick={() => setOpenDeleteModal(false)}
-//                   sx={{
-//                     flex: 1,
-//                     margin: 1,
-//                     padding: 1,
-//                     fontSize: 14,
-//                     backgroundColor: "#f5f5f5",
-//                     color: "#333",
-//                     "&:hover": { backgroundColor: "#e5e5e5" },
-//                   }}
-//                 >
-//                   ביטול
-//                 </Button>
-//                 <Button
-//                   type="button"
-//                   variant="contained"
-//                   onClick={handleDeleteAlbum}
-//                   sx={{
-//                     flex: 1,
-//                     margin: 1,
-//                     padding: 1,
-//                     fontSize: 14,
-//                     backgroundColor: "#556b9b",
-//                     color: "white",
-//                     "&:hover": {
-//                       backgroundColor: "#455a8a",
-//                       transform: "translateY(-2px)",
-//                     },
-//                   }}
-//                 >
-//                   אישור מחיקה
-//                 </Button>
-//               </DialogActions>
-//             </DialogContent>
-//           </Paper>
-//         </Dialog>
-//       )}
-//     </Box>
-//   );
-// };
-
-// export default observer(UserAlbums);
-
-
-
-
-
-
 import { observer } from "mobx-react-lite";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -368,6 +38,7 @@ const UserAlbums: React.FC = () => {
   const [openCollageDialog, setOpenCollageDialog] = useState<boolean>(false); // מצב חדש לדיאלוג הקולאז'
   const [selectedAlbum, setSelectedAlbum] = useState<SelectedAlbum | null>(null);
   const [newAlbumName, setNewAlbumName] = useState<string>("");
+  const [newAlbumDescription, setnewAlbumDescription] = useState<string>("");
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   useEffect(() => {
@@ -401,13 +72,15 @@ const UserAlbums: React.FC = () => {
         id: selectedAlbum.id,
         albumName: newAlbumName,
         userId: userId,
-        description: "",
+        description: newAlbumDescription,
       };
 
       await albumStore.updateAlbum(updatedAlbum);
       setOpenEditModal(false);
       setSelectedAlbum(null);
       setNewAlbumName("");
+      setnewAlbumDescription("");
+      // setError(null); // Reset error state on successful update
     } catch (err: any) {
       setError(err.message);
     }
@@ -426,13 +99,21 @@ const UserAlbums: React.FC = () => {
   };
 
   const openEditAlbumModal = (album: Album) => {
-    setSelectedAlbum({ id: album.id, name: album.albumName });
+    if (album.id !== undefined) {
+      setSelectedAlbum({ id: album.id, name: album.albumName });
+    }
     setNewAlbumName(album.albumName);
+    setnewAlbumDescription(album.description); // הוספת תיאור חדש
     setOpenEditModal(true);
   };
 
   const openDeleteAlbumModal = (album: Album) => {
-    setSelectedAlbum({ id: album.id, name: album.albumName });
+    if (album.id !== undefined) {
+      setSelectedAlbum({ id: album.id, name: album.albumName });
+    }
+    // setSelectedAlbum({ id: album.id, name: album.albumName });
+    setNewAlbumName(album.albumName);
+    setnewAlbumDescription(album.description); // הוספת תיאור חדש
     setOpenDeleteModal(true);
   };
 
@@ -530,7 +211,14 @@ const UserAlbums: React.FC = () => {
                   boxShadow: "0 5px 15px rgba(0,0,0,0.1)",
                 },
               }}
-              onClick={() => handleAlbumClick(album.id)}
+
+              onClick={() => {
+                if (album.id !== undefined) {
+                  handleAlbumClick(album.id);
+                } else {
+                  console.error("Album ID is undefined");
+                }
+              }}
             >
               <Box sx={{ fontSize: 80, color: "#f8d775" }}>📁</Box>
               <Typography variant="body1" sx={{ fontWeight: "bold", whiteSpace: "nowrap", overflow: "hidden", width: "100%", textAlign: "center" }}>

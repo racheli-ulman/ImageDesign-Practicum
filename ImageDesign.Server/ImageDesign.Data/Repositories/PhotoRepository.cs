@@ -54,12 +54,21 @@ namespace ImageDesign.Data.Repositories
             return photo;
         }
 
+        //public async Task<bool> DeletePhotoAsync(int id)
+        //{
+        //    var file = await GetPhotoByIdAsync(id);
+        //    if (file == null) return false;
+
+        //    _dataContext.Photos.Remove(file);
+        //    return await _dataContext.SaveChangesAsync() > 0;
+        //}
         public async Task<bool> DeletePhotoAsync(int id)
         {
-            var file = await GetPhotoByIdAsync(id);
-            if (file == null) return false;
+            var photo = await GetPhotoByIdAsync(id);
+            if (photo == null) return false;
 
-            _dataContext.Photos.Remove(file);
+            photo.IsDeleted = true; // עדכון השדה במקום מחיקה
+            _dataContext.Photos.Update(photo);
             return await _dataContext.SaveChangesAsync() > 0;
         }
 

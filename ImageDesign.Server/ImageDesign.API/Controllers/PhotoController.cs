@@ -115,5 +115,12 @@ namespace ImageDesign.API.Controllers
 
             return Ok(result);
         }
+        [HttpGet("deleted")]
+        public async Task<ActionResult<IEnumerable<PhotoDto>>> GetDeletedPhotos()
+        {
+            var deletedPhotos = await _photoService.GetDeletedPhotosAsync();
+            return Ok(deletedPhotos);
+        }
+
     }
 }

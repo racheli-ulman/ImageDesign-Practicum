@@ -230,6 +230,7 @@ const Header: React.FC = () => {
               }}
             >
               פוטו-קליק
+              {/* <img src="/images/logo.jpg" alt="" /> */}
             </Typography>
           </Box>
 

@@ -65,11 +65,19 @@ namespace ImageDesign.Service
         public async Task<bool> DeleteAlbumAsync(int id)
         {
             //await _repositoryManager.saveAsync();        {
+            IEnumerable<Photo> photos = new List<Photo>();
+            photos = await _repositoryManager.PhotoM.GetAllPhotosAsync();
 
+            foreach (var photo in photos)
+            {
+                if (photo.AlbumId == id)
+                    await _repositoryManager.PhotoM.DeletePhotoAsync(photo.Id);
+            }
             if (id < 0) return false;
+
             return await _repositoryManager.AlbumM.DeleteAlbumAsync(id);
-        }  
-        
+        }
+
         public async Task<IEnumerable<PhotoDto>> GetImagesByAlbumIdAsync(int albumId)
         {
             var getPhotos = await _repositoryManager.AlbumM.GetImagesByAlbumIdAsync(albumId);
