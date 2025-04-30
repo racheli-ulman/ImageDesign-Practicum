@@ -28,7 +28,11 @@ namespace ImageDesign.Service
             var photos= await _repositoryManager.PhotoM.GetAllPhotosAsync();
             return _mapper.Map<IEnumerable<PhotoDto>>(photos);
         }
-
+        public async Task<IEnumerable<PhotoDto>> GetAllDeletedPhotosAsync()
+        {
+            var photos = await _repositoryManager.PhotoM.GetAllDeletedPhotosAsync();
+            return _mapper.Map<IEnumerable<PhotoDto>>(photos);
+        }
         public async Task<PhotoDto> GetPhotoByIdAsync(int id)
         {
             var photo= await _repositoryManager.PhotoM.GetPhotoByIdAsync(id);
@@ -73,10 +77,45 @@ namespace ImageDesign.Service
 
             return _mapper.Map<IEnumerable<PhotoDto>>(getPhotes);
         }
+
+        //סל המחזור 
+
+        public async Task<IEnumerable<PhotoDto>> GetDeletedPhotosByUserIdAsync(int userId)
+        {
+            // שלוף את כל התמונות מהאלבום
+            var getPhotos = await _repositoryManager.PhotoM.GetDeletedPhotosByUserIdAsync(userId);
+
+            // סנן את התמונות כך שיחזיר רק את אלו שהשדה ISDELETED שווה ל-TRUE
+            //var deletedPhotos = getPhotos.Where(photo => photo.IsDeleted).ToList();
+
+            // המפה את התמונות הממוספרות ל-PhotoDto
+            return _mapper.Map<IEnumerable<PhotoDto>>(getPhotos);
+        }
+
+        public async Task<IEnumerable<PhotoDto>> GetNotPhotosByAlbumIdAsync(int albumId)
+        {
+            // שלוף את כל התמונות מהאלבום
+            var getPhotos = await _repositoryManager.PhotoM.GetNotPhotosByAlbumIdAsync(albumId);
+
+            // סנן את התמונות כך שיחזיר רק את אלו שהשדה ISDELETED שווה ל-FALSE
+            //var deletedPhotos = getPhotos.Where(photo => !photo.IsDeleted).ToList();
+
+            // המפה את התמונות הממוספרות ל-PhotoDto
+            return _mapper.Map<IEnumerable<PhotoDto>>(getPhotos);
+        }
+
+
+        public async Task<bool> RestorePhoto(int photoId)
+        {
+
+            await _repositoryManager.saveAsync();
+            return await _repositoryManager.PhotoM.RestorePhoto(photoId);
+        }
+
         //סל המחזור 
         //public async Task<IEnumerable<PhotoDto>> GetPhotosByAlbumIdAsync(int albumId)
         //{
- 
+
         //    var getPhotes = await _repositoryManager.PhotoM.GetPhotosByAlbumIdAsync(albumId);
         //    var photos = new List<Photo>();
         //    foreach (var photo in getPhotes)
@@ -117,13 +156,6 @@ namespace ImageDesign.Service
 
             await _repositoryManager.saveAsync();
             return _mapper.Map<PhotoDto>(updatedPhoto);
-        }
-
-        public async Task<IEnumerable<PhotoDto>> GetDeletedPhotosAsync()
-        {
-            var deletedPhotos = await _repositoryManager.PhotoM.GetAllPhotosAsync();
-            var result = deletedPhotos.Where(photo => photo.IsDeleted);
-            return _mapper.Map<IEnumerable<PhotoDto>>(result);
         }
 
     }

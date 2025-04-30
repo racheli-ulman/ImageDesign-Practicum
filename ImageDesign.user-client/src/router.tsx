@@ -28,6 +28,8 @@ import GetPhotos from "./components/GetPhotos";
 import UserPhotos from "./components/Collage/UserPhotos";
 import UserPhotosDialog from "./components/Collage/UserPhotos";
 import PhotoGallery from "./components/PhotosGallery";
+import TinPhoto from "./components/TinPhoto";
+
 // import CreateCollage from "./components/Collage/CreateCollage";
 // import AddPhoto1 from "./components/AddPhoto";
 
@@ -47,6 +49,7 @@ export const Router = createBrowserRouter([
             {path:"register",element:<Register/>},
             {path:"get-photos/:albumId",element:<PhotoGallery/>},
             {path:"all-photoes-of-user",element:<UserPhotosDialog open={true} onClose={() => {}} />},
+            {path:"tin-photo",element:<TinPhoto/>},
             // {path:"create-collage",element:<CreateCollage/>}
             // {path:'about',element:<AboutUs/>}
         ]

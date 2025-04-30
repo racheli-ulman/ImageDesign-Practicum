@@ -32,6 +32,14 @@ namespace ImageDesign.API.Controllers
             return Ok(photoDto);
         }
 
+        [HttpGet("deleted-photos")]
+        public async Task<ActionResult<IEnumerable<PhotoDto>>> GetAllDeletedPhotos()
+        {
+            var photos = await _photoService.GetAllDeletedPhotosAsync();
+            var photoDto = _mapper.Map<IEnumerable<PhotoDto>>(photos);
+            return Ok(photoDto);
+        }
+
         // GET api/<PhotoController>/5
         [HttpGet("{id}")]
         public async Task<ActionResult<PhotoDto>> Get(int id)
@@ -40,6 +48,8 @@ namespace ImageDesign.API.Controllers
             var photodto = _mapper.Map<PhotoDto>(photo);
             return Ok(photodto);
         }
+
+
 
         // POST api/<PhotoController>
         [HttpPost]
@@ -87,6 +97,38 @@ namespace ImageDesign.API.Controllers
             return Ok(photos);
         }
 
+        [HttpGet("Recycling-photos/user/{userId}")]
+
+        public async Task<ActionResult<IEnumerable<PhotoDto>>> GetDeletedPhotosByUserIdAsync(int userId)
+        {
+            if (userId <= 0) return BadRequest("Invalid album ID");
+
+            var photos = await _photoService.GetDeletedPhotosByUserIdAsync(userId);
+            //if (photos == null || !photos.Any())
+            //{
+            //    // החזר הודעה מותאמת אישית כאשר אין תמונות
+            //    return NotFound("אין תמונות בתקיה זו");
+            //}
+
+            return Ok(photos);
+        }
+
+        [HttpGet("photo/album/{albumId}")]
+
+        public async Task<ActionResult<IEnumerable<PhotoDto>>> GetNotPhotosByAlbumIdAsync(int albumId)
+        {
+            if (albumId <= 0) return BadRequest("Invalid album ID");
+
+            var photos = await _photoService.GetNotPhotosByAlbumIdAsync(albumId);
+            //if (photos == null || !photos.Any())
+            //{
+            //    // החזר הודעה מותאמת אישית כאשר אין תמונות
+            //    return NotFound("אין תמונות בתקיה זו");
+            //}
+
+            return Ok(photos);
+        }
+
 
 
 
@@ -115,11 +157,13 @@ namespace ImageDesign.API.Controllers
 
             return Ok(result);
         }
-        [HttpGet("deleted")]
-        public async Task<ActionResult<IEnumerable<PhotoDto>>> GetDeletedPhotos()
+        [HttpPost("restore/photo/{photoId}")]
+        public async Task<ActionResult> RestorePhoto(int photoId)
         {
-            var deletedPhotos = await _photoService.GetDeletedPhotosAsync();
-            return Ok(deletedPhotos);
+            if (photoId < 0) return null;
+            var success = await _photoService.RestorePhoto(photoId);
+            if (success == null) return null;
+            return Ok(success);
         }
 
     }

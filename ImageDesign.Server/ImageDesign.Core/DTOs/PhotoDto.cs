@@ -15,6 +15,8 @@ namespace ImageDesign.Core.DTOs
         public int? AlbumId { get; set; }
         public string PhotoPath { get; set; }
         public int PhotoSize { get; set; }
+        public bool IsDeleted { get; set; }
+
         //public DateTime UploadedAt { get; set; }
         //public DateTime UpdatedAt { get; set; }
         public int TagId { get; set; }

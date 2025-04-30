@@ -5,6 +5,7 @@ export interface Photo {
     AlbumId:number,
     PhotoPath?: string,
     PhotoSize: number,
+    isDeleted?: boolean,
     // UploadedAt?:Date
     tagId:string
   } 

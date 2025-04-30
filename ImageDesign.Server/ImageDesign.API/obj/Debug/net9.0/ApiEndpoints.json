@@ -362,8 +362,8 @@
   },
   {
     "ContainingType": "ImageDesign.API.Controllers.PhotoController",
-    "Method": "GetDeletedPhotos",
-    "RelativePath": "api/Photo/deleted",
+    "Method": "GetAllDeletedPhotos",
+    "RelativePath": "api/Photo/deleted-photos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -400,6 +400,74 @@
       },
       {
         "Name": "targetAlbumId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ImageDesign.API.Controllers.PhotoController",
+    "Method": "GetNotPhotosByAlbumIdAsync",
+    "RelativePath": "api/Photo/photo/album/{albumId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "albumId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ImageDesign.Core.DTOs.PhotoDto, ImageDesign.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ImageDesign.API.Controllers.PhotoController",
+    "Method": "GetDeletedPhotosByUserIdAsync",
+    "RelativePath": "api/Photo/Recycling-photos/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ImageDesign.Core.DTOs.PhotoDto, ImageDesign.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ImageDesign.API.Controllers.PhotoController",
+    "Method": "RestorePhoto",
+    "RelativePath": "api/Photo/restore/photo/{photoId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "photoId",
         "Type": "System.Int32",
         "IsRequired": true
       }

@@ -235,6 +235,8 @@ class PhotoUploadStore {
     error: string | null = null;
     tag: { id: number, tagName: string }[] = []; // מערך של אובייקטים עם ID ושם התג
     photos: Photo[] = []; // מערך של תמונות
+    recyclingPhotos: Photo[] = []; // מערך של תמונות שנמחקו
+
 
     constructor() {
         makeAutoObservable(this);
@@ -270,7 +272,7 @@ class PhotoUploadStore {
     async fetchPhotosByAlbumId(albumId: number) {
         try {
             console.log(albumId);
-            const response = await axios.get(`http://localhost:5083/api/Photo/album/${albumId}`);
+            const response = await axios.get(`http://localhost:5083/api/Photo/photo/album/${albumId}`);
             this.photos = response.data;
             console.log("images ", this.photos);
             console.log("response", response);
@@ -437,6 +439,36 @@ class PhotoUploadStore {
             console.error('שגיאה בקבלת URL להורדה:', error);
             this.setError('שגיאה בקבלת URL להורדה.');
             return null;
+        }
+    }
+
+
+    async fetchRecyclingPhotos(userId: number) {
+        console.log("userId in fetchRecyclingPhotos: ", userId);
+        
+        try {
+            const response = await axios.get(`http://localhost:5083/api/Photo/Recycling-photos/user/${userId}`);
+            this.recyclingPhotos = response.data; // שמירה של התמונות שנמחקו
+            console.log("Recycling photos response: ", response.data);
+            
+            console.log("Recycling photos: ", this.recyclingPhotos);
+        } catch (error) {
+            console.error('שגיאה בקבלת התמונות שנמחקו:', error);
+            this.setError('שגיאה בקבלת התמונות שנמחקו.');
+        }
+    }
+    
+
+//שחזור תמונה
+    async restorePhoto(photoId: number) {
+        try {
+            const response = await axios.post(`http://localhost:5083/api/Photo/restore/photo/${photoId}`);
+            console.log("Photo restored successfully:", response.data);
+            // אם יש צורך, תוכל לעדכן את המערך של recyclingPhotos או לבצע קריאה מחדש ל-fetchRecyclingPhotos
+            await this.fetchRecyclingPhotos(userStore.user?.user?.id); // עדכון המערך של התמונות שנמחקו
+        } catch (error: any) {
+            console.error('שגיאה בשחזור התמונה:', error);
+            this.setError('התרחשה שגיאה במהלך שחזור התמונה.');
         }
     }
 }

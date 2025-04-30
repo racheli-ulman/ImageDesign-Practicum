@@ -21,10 +21,21 @@ const PhotoGallery: React.FC = observer(() => {
     const [selectedPhotoIdForOperation, setSelectedPhotoIdForOperation] = useState<number | null>(null);
     const [isCopyMoveDialogOpen, setIsCopyMoveDialogOpen] = useState(false);
     const [isCopyOperation, setIsCopyOperation] = useState(false);
+    const [albumName, setAlbumName] = useState<string>(''); // הוספת מצב לשם האלבום
 
+    // useEffect(() => {
+    //     if (currentAlbumId) {
+    //         photoUploadStore.fetchPhotosByAlbumId(Number(currentAlbumId));
+    //     }
+    //     if (userId) {
+    //         albumStore.fetchAlbums(userId);
+    //     }
+    // }, [currentAlbumId, userId]);
     useEffect(() => {
         if (currentAlbumId) {
             photoUploadStore.fetchPhotosByAlbumId(Number(currentAlbumId));
+            const album = albumStore.albums.find((album) => album.id === Number(currentAlbumId));
+            setAlbumName(album ? album.albumName : 'אלבום לא נמצא'); // עדכון שם האלבום
         }
         if (userId) {
             albumStore.fetchAlbums(userId);
@@ -113,7 +124,7 @@ const PhotoGallery: React.FC = observer(() => {
 
     if (photoUploadStore.error) return <div>שגיאה: {photoUploadStore.error}</div>;
     if (!photoUploadStore.photos || photoUploadStore.photos.length === 0) {
-        return <div>אין תמונות להצגה</div>;
+        return <div>אין תמונות להצגה בתקיית {albumName}</div>;
     }
 
     return (
@@ -132,7 +143,8 @@ const PhotoGallery: React.FC = observer(() => {
                         color: '#333'
                     }}
                 >
-                    התמונות שלי
+                    {albumName} {/* שינוי כאן להצגת שם האלבום */}
+                    {/* התמונות שלי */}
                 </Typography>
                 
                 <PhotoGrid 

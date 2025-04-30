@@ -5,6 +5,9 @@ import albumStore from "../stores/albumStore";
 import CreateNewAlbum from "./CreateNewAlbum";
 import { SelectedAlbum } from "../models/Album";
 import userStore from "../stores/userStore";
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever'; // אייקון סל מחזור
+  
+// import DeleteIcon from '@mui/icons-material/DeleteIcon'; // או DeleteForeverIcon
 import UserPhotosDialog from "./Collage/UserPhotos"; // יבוא של הקומפוננטה החדשה
 import {
   Box,
@@ -173,10 +176,20 @@ const UserAlbums: React.FC = () => {
           variant="contained"
           startIcon={<PhotoLibraryIcon />}
           onClick={() => setOpenCollageDialog(true)} // פתיחת הדיאלוג במקום ניווט
-          sx={{ width: "100%" }}
+          sx={{ width: "100%", marginBottom: 2 }}
         >
           צור קולאז מתמונות האלבומים שלך
         </Button>
+
+        <Button
+    variant="contained"
+    startIcon={<DeleteForeverIcon />} // אייקון סל המחזור
+    onClick={() => navigate(`/tin-photo`)}
+    sx={{ width: "100%" }}
+>
+    סל המחזור        
+</Button>
+
       </Box>
 
       <Box sx={{ flexGrow: 1, padding: 2, marginLeft: "20%", overflowY: "auto" }}>

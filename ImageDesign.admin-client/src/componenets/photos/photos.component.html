@@ -1,10 +1,67 @@
-<p>photos works!</p>
+<!-- <p>photos works!</p>
 <mat-card class="album-card">
     <mat-card-header>
-      <mat-card-title>סך התמונות הוא</mat-card-title>
+        <mat-card-title>סך התמונות הוא</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-      <p>{{ photos.length }}</p>
+        <p>{{ photos.length }}</p>
     </mat-card-content>
-  </mat-card>
-  
+</mat-card>
+
+<mat-card class="deleted-album-card">
+    <mat-card-header>
+        <mat-card-title>סך התמונות  הוא</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>{{ deletedPhotos.length }}</p>
+    </mat-card-content>
+</mat-card>
+
+
+<mat-card class="deleted-album-card">
+    <mat-card-header>
+        <mat-card-title>סך התמונות כולל מחוקות  הוא</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>{{ getAbsoluteDifference() }}</p>
+    </mat-card-content>
+</mat-card>
+ -->
+ <p>photos works!</p>
+
+ <mat-card class="album-card">
+     <mat-card-header>
+         <mat-card-title>סך התמונות הוא</mat-card-title>
+     </mat-card-header>
+     <mat-card-content>
+         <p>{{ photos.length }}</p>
+     </mat-card-content>
+ </mat-card>
+ 
+ <mat-card class="deleted-album-card">
+     <mat-card-header>
+         <mat-card-title>סך התמונות המחוקות הוא</mat-card-title>
+     </mat-card-header>
+     <mat-card-content>
+         <p>{{ deletedPhotos.length }}</p>
+     </mat-card-content>
+ </mat-card>
+ 
+ <mat-card class="deleted-album-card">
+     <mat-card-header>
+         <mat-card-title>סך התמונות ללא תמונות מחוקות הוא</mat-card-title>
+     </mat-card-header>
+     <mat-card-content>
+         <p>{{ getAbsoluteDifference() }}</p>
+     </mat-card-content>
+ </mat-card>
+ 
+ <!-- הוספת גרף העוגה -->
+ <div style="display: block;">
+     <canvas baseChart
+             [data]="pieChartData"
+             [options]="{ responsive: true }"
+             chartType="pie">
+     </canvas>
+ </div>
+ 

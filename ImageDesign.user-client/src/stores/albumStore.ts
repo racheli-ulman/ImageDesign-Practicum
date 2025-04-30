@@ -296,7 +296,12 @@ class AlbumStore {
       this.setError("Error deleting album.");
     }
   }
+
+  
 }
+
+  
+
 
 const albumStore = new AlbumStore();
 export default albumStore;

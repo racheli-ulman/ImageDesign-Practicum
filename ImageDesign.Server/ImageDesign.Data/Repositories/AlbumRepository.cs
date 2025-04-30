@@ -107,5 +107,7 @@ namespace ImageDesign.Data.Repositories
                     .Any(album => album.UserId == userId && album.Id == photo.AlbumId))
                 .ToListAsync();
         }
+
+
     }
 }

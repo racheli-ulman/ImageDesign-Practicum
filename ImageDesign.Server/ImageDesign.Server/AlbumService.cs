@@ -108,5 +108,8 @@ namespace ImageDesign.Service
             var photos = await _repositoryManager.AlbumM.GetAllPhotosByUserIdAsync(userId);
             return _mapper.Map<IEnumerable<PhotoDto>>(photos);
         }
+
+
+        
     }
 }

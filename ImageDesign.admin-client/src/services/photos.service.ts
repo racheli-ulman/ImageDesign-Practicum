@@ -14,8 +14,13 @@ export class PhotosService {
    constructor(private http: HttpClient) { }
  
    // Get all users
- getAllPhotos(): Observable<Photo[]> {
+  getAllPhotos(): Observable<Photo[]> {
      return this.http.get<Photo[]>(`${this.baseUrl}`);
      // return this.http.get(`${this.baseUrl}`);
    }
+   getDeletedPhotos(): Observable<Photo[]> {
+    return this.http.get<Photo[]>(`${this.baseUrl}/deleted-photos`);
+    // return this.http.get(`${this.baseUrl}`);
+  }
+
 }
