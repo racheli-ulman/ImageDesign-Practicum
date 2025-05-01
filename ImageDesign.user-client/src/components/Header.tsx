@@ -123,11 +123,13 @@ import {
   ListItemText, 
   IconButton,
   Container,
-  alpha
+  alpha,
+  Avatar
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
 import { Link } from 'react-router-dom';
+import userStore from '../stores/userStore';
 
 interface NavItem {
   name: string;
@@ -147,6 +149,7 @@ const Header: React.FC = () => {
   const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
 
   const toggleDrawer = (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
+    
     if (
       event.type === 'keydown' &&
       ('key' in event && (event.key === 'Tab' || event.key === 'Shift'))
@@ -190,7 +193,7 @@ const Header: React.FC = () => {
               '&:hover': {
                 bgcolor: '#FFA000',
               }
-            }}
+            }}            
             component={Link} 
             to="/login"
           >
@@ -275,6 +278,12 @@ const Header: React.FC = () => {
               >
                 התחברות
               </Button>
+              {/* {userStore.user && (
+                        <Avatar sx={{ bgcolor: '#FFC107', marginLeft: 'auto' }}>
+                          
+                            {userStore.user?.uesr?.firstName.charAt(0)} 
+                        </Avatar>
+                    )} */}
               <Box sx={{ display: 'flex' }}>
                 {navItems.map((item) => (
                   <Button 

@@ -45,6 +45,7 @@ namespace ImageDesign.Data.Repositories
             existingAlbum.AlbumName = album.AlbumName;
             existingAlbum.UserId = album.UserId;
             existingAlbum.description = album.description;
+            existingAlbum.IsDeleted = album.IsDeleted;
             return album;
         }
         

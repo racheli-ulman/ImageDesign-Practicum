@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace ImageDesign.Service
 {
-    public class PhotoService:IPhotoService
+    public class PhotoService : IPhotoService
     {
         private readonly IRepositoryManager _repositoryManager;
         readonly IMapper _mapper;
@@ -25,7 +25,7 @@ namespace ImageDesign.Service
 
         public async Task<IEnumerable<PhotoDto>> GetAllPhotosAsync()
         {
-            var photos= await _repositoryManager.PhotoM.GetAllPhotosAsync();
+            var photos = await _repositoryManager.PhotoM.GetAllPhotosAsync();
             return _mapper.Map<IEnumerable<PhotoDto>>(photos);
         }
         public async Task<IEnumerable<PhotoDto>> GetAllDeletedPhotosAsync()
@@ -35,7 +35,7 @@ namespace ImageDesign.Service
         }
         public async Task<PhotoDto> GetPhotoByIdAsync(int id)
         {
-            var photo= await _repositoryManager.PhotoM.GetPhotoByIdAsync(id);
+            var photo = await _repositoryManager.PhotoM.GetPhotoByIdAsync(id);
             return _mapper.Map<PhotoDto>(photo);
         }
 
@@ -44,9 +44,10 @@ namespace ImageDesign.Service
             var addPhoto = _mapper.Map<Photo>(photo);
             //if (_repositoryManager.AlbumM.GetAlbumByIdAsync(photo.Id) == null)
             //{
-                var createAlbum = await _repositoryManager.PhotoM.AddPhotoAsync(addPhoto);
+            addPhoto.UploadedAt = DateTime.Now;
+            var createAlbum = await _repositoryManager.PhotoM.AddPhotoAsync(addPhoto);
             await _repositoryManager.saveAsync();
-            
+
             return _mapper.Map<PhotoDto>(addPhoto);
             //}
             return null;
@@ -57,7 +58,7 @@ namespace ImageDesign.Service
             if (id < 0 || photo == null)
                 return null;
             var updatePhoto = _mapper.Map<Photo>(photo);
-            var result =await _repositoryManager.PhotoM.UpdatePhotoAsync(id, updatePhoto);
+            var result = await _repositoryManager.PhotoM.UpdatePhotoAsync(id, updatePhoto);
             await _repositoryManager.saveAsync();
 
             return _mapper.Map<PhotoDto>(result);
@@ -65,7 +66,7 @@ namespace ImageDesign.Service
 
         public async Task<bool> DeletePhotoAsync(int id)
         {
-            
+
             await _repositoryManager.saveAsync();
             return await _repositoryManager.PhotoM.DeletePhotoAsync(id);
         }

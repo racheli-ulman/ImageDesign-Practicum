@@ -27,6 +27,9 @@ export class UserService {
     return this.http.delete(`${this.baseUrl}/${userId}`);
   }
 
+  updateUser(userId: number, updates: User): Observable<any> {
+    return this.http.put(`${this.baseUrl}/${userId}`, updates)
+  }
   // UserService
   getMonthlyRegistrations(): Observable<MonthlyRegistrationsDto[]> {
     return this.http.get<MonthlyRegistrationsDto[]>(`${this.baseUrl}/registrations-per-month`);

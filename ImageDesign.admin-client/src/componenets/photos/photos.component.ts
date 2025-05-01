@@ -59,13 +59,14 @@ export class PhotosComponent {
   deletedPhotos: Photo[] = [];
   errorMessage: string = '';
   
-  // נתוני גרף
+  // נתוני גרף עוגה
   pieChartData: ChartData<'pie'> = {
-    labels: ['Active Photos', 'Deleted Photos', 'Difference'],
+    labels: ['סה"כ תמונות ', 'תמונות מחוקות', 'תמוות פעילות'],
     datasets: [
       {
-        data: [0, 0, 0], // ערכים ראשוניים
-        backgroundColor: ['#4caf50', '#f44336', '#2196f3'], // צבעים
+        data: [0, 0, 0], // ערכים ראשוניים - יעודכנו בהמשך
+        backgroundColor: ['#FFFFFF', '#000000', '#FF0000'], // לבן, שחור, אדום
+        borderColor: ['#d1d1d1', '#333333', '#cc0000'], // גבולות עם צבע מעט כהה יותר
       },
     ],
   };
@@ -73,10 +74,25 @@ export class PhotosComponent {
   // הגדרת אפשרויות לגרף
   pieChartOptions: ChartOptions<'pie'> = {
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
-        position: 'top',
+        position: 'bottom',
+        labels: {
+          font: {
+            size: 14
+          }
+        }
       },
+      tooltip: {
+        callbacks: {
+          label: function(context) {
+            const label = context.label || '';
+            const value = context.raw as number;
+            return `${label}: ${value} תמונות`;
+          }
+        }
+      }
     },
   };
 
@@ -94,7 +110,7 @@ export class PhotosComponent {
         this.updateChartData();
       },
       error: (error) => {
-        this.errorMessage = 'Failed to load photos';
+        this.errorMessage = 'שגיאה בטעינת התמונות הפעילות';
         console.error(error);
       }
     });
@@ -107,22 +123,31 @@ export class PhotosComponent {
         this.updateChartData();
       },
       error: (error) => {
-        this.errorMessage = 'Failed to load deleted photos';
+        this.errorMessage = 'שגיאה בטעינת התמונות המחוקות';
         console.error(error);
       }
     });
   }
 
   getAbsoluteDifference(): number {
-    return Math.abs(this.deletedPhotos.length - this.photos.length);
+    return Math.abs(this.photos.length - this.deletedPhotos.length);
   }
 
   updateChartData(): void {
+    const activeCount = this.photos.length;
+    const deletedCount = this.deletedPhotos.length;
     const difference = this.getAbsoluteDifference();
-    this.pieChartData.datasets[0].data = [
-      this.photos.length,
-      this.deletedPhotos.length,
-      difference,
-    ];
+    
+    this.pieChartData = {
+      labels: ['סה"כ תמונות ', 'תמונות מחוקות', 'תמונות פעילות'],
+      datasets: [
+        {
+          data: [activeCount, deletedCount, difference],
+          backgroundColor: ['#FFFFFF', '#000000', '#FF0000'], // לבן, שחור, אדום
+          borderColor: ['#d1d1d1', '#333333', '#cc0000'], // גבולות עם צבע מעט כהה יותר
+          borderWidth: 1
+        },
+      ],
+    };
   }
 }

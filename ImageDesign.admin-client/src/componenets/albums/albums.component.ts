@@ -14,23 +14,24 @@ import { MatCardModule } from '@angular/material/card'; // הוספת ייבוא
 export class AlbumsComponent {
 albums: Album[] = [];
   errorMessage: string = '';
-  constructor(private albumService: AlbumService, private router: Router) {
-  }
+  isLoading: boolean = true;
+
+  constructor(private albumService: AlbumService, private router: Router) {}
 
   ngOnInit(): void {
-  console.log("show-users component", this.albums);
-  
+    console.log("albums component initialized");
+    
     this.albumService.getAllAlbums().subscribe({
       next: (data) => {
         this.albums = data;
-        console.log("albums", this.albums.length);
-        
+        this.isLoading = false;
+        console.log("albums loaded", this.albums.length);
       },
       error: (error) => {
-        this.errorMessage = 'Failed to load courses';
+        this.errorMessage = 'לא ניתן לטעון את האלבומים';
+        this.isLoading = false;
         console.error(error);
       }
     });
-    // this.loadUsersesByStudent()
   }
 }

@@ -10,10 +10,11 @@ import { MatInputModule } from '@angular/material/input';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-login',
-  imports: [ReactiveFormsModule, ReactiveFormsModule,
+  imports: [CommonModule, ReactiveFormsModule, ReactiveFormsModule,
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,MatIconModule,
@@ -29,18 +30,17 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
   addUserForm!: FormGroup;
-  errormessage: string = '';  // משתנה לשמירת השגיאה
-  showError: boolean = false;  // משתנה לניהול הצגת השגיאה
+  errormessage: string = '';
+  showError: boolean = false;
+  hide = true;
 
   constructor(
     private fb: FormBuilder,
     private authservice: AuthService,
     private router: Router
   ) {}
-  hide = true;
 
   ngOnInit(): void {
-    
     this.addUserForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required],
@@ -49,34 +49,31 @@ export class LoginComponent {
 
   onSubmit() {
     if (this.addUserForm.valid) {
-      const { email, password } = this.addUserForm.value; // אין יותר userGroup
-  
+      const { email, password } = this.addUserForm.value;
+
       this.authservice.login(email, password).subscribe({
         next: (response) => {
           console.log('User logged in successfully', response);
           sessionStorage.setItem('token', response.token);
           console.log("token", response.token);
-          const user = response.user;
           sessionStorage.setItem('userId', response.user.id);
           this.router.navigate(['/home']);
-
         },
         error: (err) => {
           if (err.status === 400) {
-            this.errormessage = 'Invalid credentials';
+            this.errormessage = 'פרטי התחברות שגויים';
           } else if (err.status === 401) {
-            this.errormessage = 'only admin can login';
+            this.errormessage = 'רק מנהל יכול להתחבר';
           } else {
             console.log("err.status", err.status);
-            this.errormessage = 'An unexpected error occurred';
+            this.errormessage = 'אירעה שגיאה בלתי צפויה';
           }
           this.showError = true;
         }
       });
     } else {
-      this.errormessage = 'Please fill in all fields correctly.';
+      this.errormessage = 'נא למלא את כל השדות בצורה נכונה';
       this.showError = true;
     }
   }
-  
 }

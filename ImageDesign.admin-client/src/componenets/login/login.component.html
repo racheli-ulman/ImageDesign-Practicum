@@ -1,53 +1,48 @@
-<div class="split-container">
-    <!-- Image Section -->
-    <div class="image-section">
-      <!-- <img src="/14.jpg" alt="FolioTeach Background" class="background-image"> -->
-      <div class="overlay">
-        <div class="logo-container">
-          <!-- <mat-icon>school</mat-icon> -->
-          <!-- <span>FolioTeach</span> -->
-        </div>
+<div class="login-container">
+    <mat-card class="login-card">
+      <div class="login-header">
+        התחברות למערכת
       </div>
-    </div>
-  
-    <!-- Login Section -->
-    <div class="login-section">
-      <div class="login-card-container">
-        <mat-card class="login-card">
-          <div class="login-header">
-            <h1>התחברות</h1>
-            <p>הקלד את המייל שלך והסיסמא כדי להתחבר</p>
+      
+      <div class="login-content">
+        <form [formGroup]="addUserForm" (ngSubmit)="onSubmit()">
+          
+          <!-- Error message display -->
+          <div class="error-message" *ngIf="showError">
+            {{ errormessage }}
           </div>
-  
-          <form [formGroup]="addUserForm" (ngSubmit)="onSubmit()" class="login-form">
-            <mat-form-field appearance="fill"> 
-              <input matInput formControlName="email" placeholder="הזן את כתובת המייל שלך" type="email" required>
-              @if (addUserForm.get('userGroup.email')?.hasError('required')) {
-                <mat-error>אימייל נדרש</mat-error>
-              }
-              @if (addUserForm.get('userGroup.email')?.hasError('email')) {
-                <mat-error>נא להזין מייל תקין</mat-error>
-              }
-            </mat-form-field>
-            
-            <mat-form-field appearance="fill"> 
-              <input matInput formControlName="password" placeholder="הזן את הסיסמה שלך" [type]="hide ? 'password' : 'text'" required>
-              @if (addUserForm.get('userGroup.password')?.hasError('required')) {
-                <mat-error>סיסמה נדרשת</mat-error>
-              }
-            </mat-form-field>
-  
-            <!-- <div class="form-options">
-              <mat-checkbox formControlName="rememberMe" color="primary">זכור אותי</mat-checkbox>
-              <a href="#" class="forgot-password">שכחת סיסמא?</a>
-            </div> -->
-  
-            <button mat-flat-button color="primary" type="submit" class="login-button" [disabled]="!addUserForm.valid">
-              התחברות
-              <!-- <mat-icon>login</mat-icon> -->
+          
+          <!-- Email field -->
+          <mat-form-field appearance="fill" class="form-field">
+            <mat-label>אימייל</mat-label>
+            <input matInput formControlName="email" type="email" required>
+            <mat-icon matPrefix>email</mat-icon>
+            <mat-error *ngIf="addUserForm.get('email')?.hasError('required')">
+              אימייל נדרש
+            </mat-error>
+            <mat-error *ngIf="addUserForm.get('email')?.hasError('email')">
+              נא להזין מייל תקין
+            </mat-error>
+          </mat-form-field>
+          
+          <!-- Password field -->
+          <mat-form-field appearance="fill" class="form-field">
+            <mat-label>סיסמה</mat-label>
+            <input matInput formControlName="password" [type]="hide ? 'password' : 'text'" required>
+            <mat-icon matPrefix>lock</mat-icon>
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" type="button" class="password-visibility">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
-          </form>
-        </mat-card>
+            <mat-error *ngIf="addUserForm.get('password')?.hasError('required')">
+              סיסמה נדרשת
+            </mat-error>
+          </mat-form-field>
+          
+          <!-- Login button -->
+          <button mat-raised-button color="primary" type="submit" class="login-button">
+            התחברות
+          </button>
+        </form>
       </div>
-    </div>
+    </mat-card>
   </div>

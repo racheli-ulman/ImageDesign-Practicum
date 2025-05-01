@@ -129,7 +129,7 @@ namespace ImageDesign.Data.Repositories
                 AlbumId = targetAlbumId,
                 PhotoPath = photo.PhotoPath,
                 PhotoSize = photo.PhotoSize,
-                UploadedAt = DateTime.Now,
+                UploadedAt = photo.UploadedAt,
                 UpdatedAt = DateTime.Now,
                 TagId = photo.TagId,
                 IsDeleted = false

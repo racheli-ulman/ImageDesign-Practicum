@@ -13,61 +13,64 @@ import { LoginComponent } from '../login/login.component';
 })
 export class ShowUsersComponent {
   users: any[] = [];
-  studentcourses: any[] = [];
   errorMessage: string = '';
-  constructor(private userService: UserService, private router: Router) {
-  }
+  canEditUsers: boolean = true; // משתנה לשליטה על הצגת כפתור עריכה
+  
+  // משתנים לעימוד (pagination)
+  currentPage: number = 1;
+  itemsPerPage: number = 10;
+  totalItems: number = 0;
+  pages: number[] = [];
+
+  constructor(private userService: UserService, private router: Router) {}
 
   ngOnInit(): void {
-  console.log("show-users component", this.users);
-  
+    this.loadUsers();
+  }
+
+  loadUsers(): void {
+    console.log("טוען משתמשים...");
+    
     this.userService.getAllUsers().subscribe({
       next: (data) => {
         this.users = data;
+        this.totalItems = data.length;
+        this.calculatePages();
       },
       error: (error) => {
-        this.errorMessage = 'Failed to load courses';
+        this.errorMessage = 'שגיאה בטעינת רשימת המשתמשים';
         console.error(error);
       }
     });
-    // this.loadUsersesByStudent()
   }
-  delete(id: number) {
-    this.userService.deleteUser(id.toString()).subscribe({
-      next: (data) => {
 
-        this.users = this.users.filter(u => u.id != id);
-      },
-      error: (error) => {
-        this.errorMessage = 'Failed to load courses';
-        console.error(error);
-      }
-    });;
+  calculatePages(): void {
+    const pageCount = Math.ceil(this.totalItems / this.itemsPerPage);
+    this.pages = Array.from({ length: pageCount }, (_, i) => i + 1);
+  }
 
-   }
-  // editCourse(id: number) {
-  //   this.router.navigate(['/edit-course', id]);
-  // }
+  changePage(page: number): void {
+    this.currentPage = page;
+    // כאן אפשר להוסיף לוגיקה שתטען רק את המשתמשים לפי העמוד הנוכחי
+  }
 
+  delete(id: number): void {
+    if (confirm('האם אתה בטוח שברצונך למחוק משתמש זה?')) {
+      this.userService.deleteUser(id.toString()).subscribe({
+        next: () => {
+          this.users = this.users.filter(u => u.id != id);
+          this.totalItems = this.users.length;
+          this.calculatePages();
+        },
+        error: (error) => {
+          this.errorMessage = 'שגיאה במחיקת המשתמש';
+          console.error(error);
+        }
+      });
+    }
+  }
 
-
-  // showLesson(id: number) {
-  //   this.router.navigate(['/show-lesson', id])
-  // }
-  // loadUsersesByStudent(): void {
-  //   const studentId = localStorage.getItem('userId');
-    
-  //   if (studentId) {
-  //     this.coursesService.getStudentCourses(studentId).subscribe({
-  //       next: (data) => {
-  //         this.studentcourses = data;  
-  //       },
-  //       error: (error) => {
-  //         console.error('Error fetching student courses:', error);
-  //       }
-  //     });
-  //   }
-  // }
-
-  
+  editUser(id: number): void {
+    this.router.navigate(['/edit-user', id]);
+  }
 }

@@ -190,10 +190,10 @@
 
 
 
-import { makeAutoObservable } from "mobx";
-import { Album } from "../models/Album";
-import api from "../components/api";
-import axios from "axios";
+  import { makeAutoObservable } from "mobx";
+  import { Album } from "../models/Album";
+  import api from "../components/api";
+  import axios from "axios";
 
 class AlbumStore {
   albums: Album[] = [];
