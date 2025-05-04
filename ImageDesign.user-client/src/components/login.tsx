@@ -36,7 +36,7 @@ const Login: React.FC = () => {
     try {
       const res = await userStore.login(userEmail, password);
       setMsg("Login successful");
-      navigate('/userAlbums');
+      navigate('/personal-area'); // Redirect to personal area after successful login
     } catch (error: any) {
       if (userStore.error) {
         setMsg(userStore.error);

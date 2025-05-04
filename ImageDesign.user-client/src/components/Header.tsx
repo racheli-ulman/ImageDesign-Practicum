@@ -1,112 +1,3 @@
-// import React, { useState } from 'react';
-// import { 
-//   AppBar, 
-//   Toolbar, 
-//   Typography, 
-//   Button, 
-//   Box, 
-//   useMediaQuery, 
-//   useTheme, 
-//   Drawer, 
-//   List, 
-//   ListItem, 
-//   ListItemText, 
-//   IconButton,
-//   Container 
-// } from '@mui/material';
-// import MenuIcon from '@mui/icons-material/Menu';
-// import { Link } from 'react-router-dom';
-
-// interface NavItem {
-//   name: string;
-//   path: string;
-// }
-
-// const navItems: NavItem[] = [
-//   { name: 'תכונות', path: '#features' },
-//   { name: 'תמחור', path: '#pricing' },
-//   { name: 'אודות', path: '#about' },
-//   { name: 'צור קשר', path: '#contact' },
-// ];
-
-// const Header: React.FC = () => {
-//   const theme = useTheme();
-//   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-//   const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
-
-//   const toggleDrawer = (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
-//     if (
-//       event.type === 'keydown' &&
-//       ('key' in event && (event.key === 'Tab' || event.key === 'Shift'))
-//     ) {
-//       return;
-//     }
-//     setDrawerOpen(open);
-//   };
-
-//   const navList = (
-//     <Box onClick={toggleDrawer(false)} onKeyDown={toggleDrawer(false)}>
-//       <List>
-//         {navItems.map((item) => (
-//           <ListItem button key={item.name} component="a" href={item.path}>
-//             <ListItemText primary={item.name} />
-//           </ListItem>
-//         ))}
-//       </List>
-//     </Box>
-//   );
-
-//   return (
-//     <AppBar position="fixed" elevation={0} sx={{ width: '100%' }}>
-//       <Container maxWidth={false} sx={{ paddingLeft: 0, paddingRight: 0 }}>
-//         <Toolbar disableGutters>
-//           <Typography variant="h5" component="div" sx={{ flexGrow: 1, fontWeight: 'bold' }}>
-//             פוטו-קליק
-//           </Typography>
-
-//           {isMobile ? (
-//             <>
-//               <IconButton
-//                 color="inherit"
-//                 aria-label="open drawer"
-//                 edge="start"
-//                 onClick={toggleDrawer(true)}
-//               >
-//                 <MenuIcon />
-//               </IconButton>
-//               <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
-//                 {navList}
-//               </Drawer>
-//             </>
-//           ) : (
-//             <>
-//               <Box sx={{ display: 'flex', mx: 2 }}>
-//                 {navItems.map((item) => (
-//                   <Button key={item.name} color="inherit" href={item.path} sx={{ mx: 1 }}>
-//                     {item.name}
-//                   </Button>
-//                 ))}
-//               </Box>
-//               <Box>
-//                 <Button color="inherit" variant="outlined" sx={{ mx: 1 }} component={Link}
-//               to="/login">
-//                   התחברות
-//                 </Button>
-//                 {/* <Button  color="secondary" variant="contained" sx={{ mx: 1 }}       component={Link}
-//               to="/register">
-//                   הרשמה
-//                 </Button> */}
-//               </Box>
-//             </>
-//           )}
-//         </Toolbar>
-//       </Container>
-//     </AppBar>
-//   );
-// };
-
-// export default Header;
-
 
 import React, { useState } from 'react';
 import { 
@@ -159,50 +50,50 @@ const Header: React.FC = () => {
     setDrawerOpen(open);
   };
 
-  const navList = (
-    <Box onClick={toggleDrawer(false)} onKeyDown={toggleDrawer(false)} sx={{ width: 250, direction: 'rtl' }}>
-      <Box sx={{ p: 2, display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
-        <CameraAltIcon sx={{ mr: 1, color: '#FFC107' }} />
-        <Typography variant="h6" sx={{ fontWeight: 'bold', color: '#FFC107' }}>
-          פוטו-קליק
-        </Typography>
-      </Box>
-      <List>
-        {navItems.map((item) => (
-          <ListItem button key={item.name} component="a" href={item.path} sx={{ 
-            borderRadius: 1,
-            mx: 1,
-            color: 'white',
-            '&:hover': {
-              bgcolor: alpha('#1976D2', 0.1),
-            }
-          }}>
-            <ListItemText primary={item.name} />
-          </ListItem>
-        ))}
-        <ListItem sx={{ mt: 2 }}>
-          <Button 
-            fullWidth 
-            variant="contained" 
-            sx={{ 
-              borderRadius: '8px',
-              py: 1,
-              fontWeight: 'bold',
-              bgcolor: '#FFC107', // צהוב
-              color: 'white',
-              '&:hover': {
-                bgcolor: '#FFA000',
-              }
-            }}            
-            component={Link} 
-            to="/login"
-          >
-            התחברות
-          </Button>
-        </ListItem>
-      </List>
-    </Box>
-  );
+  // const navList = (
+    // <Box onClick={toggleDrawer(false)} onKeyDown={toggleDrawer(false)} sx={{ width: 250, direction: 'rtl' }}>
+    //   <Box sx={{ p: 2, display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
+    //     <CameraAltIcon sx={{ mr: 1, color: '#FFC107' }} />
+    //     <Typography variant="h6" sx={{ fontWeight: 'bold', color: '#FFC107' }}>
+    //       פוטו-קליק
+    //     </Typography>
+    //   </Box>
+    //   <List>
+    //     {navItems.map((item) => (
+    //       <ListItem button key={item.name} component="a" href={item.path} sx={{ 
+    //         borderRadius: 1,
+    //         mx: 1,
+    //         color: 'white',
+    //         '&:hover': {
+    //           bgcolor: alpha('#1976D2', 0.1),
+    //         }
+    //       }}>
+    //         <ListItemText primary={item.name} />
+    //       </ListItem>
+    //     ))}
+    //     <ListItem sx={{ mt: 2 }}>
+    //       <Button 
+    //         fullWidth 
+    //         variant="contained" 
+    //         sx={{ 
+    //           borderRadius: '8px',
+    //           py: 1,
+    //           fontWeight: 'bold',
+    //           bgcolor: '#FFC107', // צהוב
+    //           color: 'white',
+    //           '&:hover': {
+    //             bgcolor: '#FFA000',
+    //           }
+    //         }}            
+    //         component={Link} 
+    //         to="/login"
+    //       >
+    //         התחברות
+    //       </Button>
+    //     </ListItem>
+    //   </List>
+    // </Box>
+  // );
 
   return (
     <AppBar 
@@ -284,7 +175,7 @@ const Header: React.FC = () => {
                             {userStore.user?.uesr?.firstName.charAt(0)} 
                         </Avatar>
                     )} */}
-              <Box sx={{ display: 'flex' }}>
+              {/* <Box sx={{ display: 'flex' }}>
                 {navItems.map((item) => (
                   <Button 
                     key={item.name} 
@@ -312,7 +203,7 @@ const Header: React.FC = () => {
                     {item.name}
                   </Button>
                 ))}
-              </Box>
+              </Box> */}
             </Box>
           )}
           
@@ -329,7 +220,7 @@ const Header: React.FC = () => {
               }
             }}
           >
-            {navList}
+            {/* {navList} */}
           </Drawer>
         </Toolbar>
       </Container>

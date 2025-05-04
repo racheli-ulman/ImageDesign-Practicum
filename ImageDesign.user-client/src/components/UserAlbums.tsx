@@ -63,7 +63,7 @@ const UserAlbums: React.FC = () => {
   }, [userId]);
 
   const handleAlbumClick = (albumId: number) => {
-    navigate(`/get-photos/${albumId}`);
+    navigate(`/personal-area/get-photos/${albumId}`);
   };
 
   const handleEditAlbum = async (e: React.FormEvent) => {
@@ -163,7 +163,7 @@ const UserAlbums: React.FC = () => {
           הוספת תיקיה חדשה
         </Button>
 
-        <Button
+        {/* <Button
           variant="contained"
           startIcon={<UploadFileIcon />}
           onClick={() => navigate(`/add-photo`)}
@@ -188,7 +188,7 @@ const UserAlbums: React.FC = () => {
     sx={{ width: "100%" }}
 >
     סל המחזור        
-</Button>
+</Button> */}
 
       </Box>
 
@@ -237,6 +237,9 @@ const UserAlbums: React.FC = () => {
               <Typography variant="body1" sx={{ fontWeight: "bold", whiteSpace: "nowrap", overflow: "hidden", width: "100%", textAlign: "center" }}>
                 {album.albumName}
               </Typography>
+              {/* <Typography variant="body1" sx={{ fontWeight: "bold", whiteSpace: "nowrap", overflow: "hidden", width: "100%", textAlign: "center" }}>
+                {album.description}
+              </Typography> */}
               <Box
                 sx={{
                   display: "flex",

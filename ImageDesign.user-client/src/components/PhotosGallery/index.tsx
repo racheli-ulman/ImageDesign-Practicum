@@ -145,6 +145,7 @@ const PhotoGallery: React.FC = observer(() => {
                 >
                     {albumName} {/* שינוי כאן להצגת שם האלבום */}
                     {/* התמונות שלי */}
+                    
                 </Typography>
                 
                 <PhotoGrid 

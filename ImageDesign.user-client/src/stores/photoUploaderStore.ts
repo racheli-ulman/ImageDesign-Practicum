@@ -286,9 +286,12 @@ class PhotoUploadStore {
     }
 
     async deletePhoto(photoId: number) {
+        console.log("photoId in deletePhoto: ", photoId);
+        
         try {
             await axios.delete(`http://localhost:5083/api/Photo/${photoId}`);
             console.log("photoId ", photoId);
+            
             this.photos = this.photos.filter(photo => photo.id !== photoId);
             // אם יש צורך, תוכל לקרוא שוב ל-fetchPhotosByAlbumId כאן
         } catch (error: any) {

@@ -57,6 +57,9 @@ namespace ImageDesign.API.Controllers
         public async Task<ActionResult> Put(int id, [FromBody] UserPostModel user)
         {
             if (id < 0 || user == null) return null;
+            //var Updateuser =_userService.GetUserByIdAsync(id);
+            //if (Updateuser == null)
+            //    return NotFound("user not found");
             var success = await _userService.UpdateUserAsync(id, _mapper.Map<UserDto>(user));
             if (success == null) return null;
             return Ok(success.Id);

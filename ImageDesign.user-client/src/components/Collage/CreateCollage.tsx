@@ -18,11 +18,19 @@ import {
   Paper,
   Snackbar,
   Alert,
-  CircularProgress
+  CircularProgress,
+  TextField,
+  Checkbox,
+  Select,
+  MenuItem,
+  InputLabel,
+  Stack
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import SaveIcon from '@mui/icons-material/Save';
 import DownloadIcon from '@mui/icons-material/Download';
+import TextFieldsIcon from '@mui/icons-material/TextFields';
+import FormatColorFillIcon from '@mui/icons-material/FormatColorFill';
 import albumStore from '../../stores/albumStore';
 import html2canvas from 'html2canvas';
 
@@ -33,6 +41,8 @@ interface CollageCreatorProps {
 }
 
 type LayoutType = 'grid' | 'horizontal' | 'vertical' | 'random';
+type TextPositionType = 'top' | 'center' | 'bottom';
+type FontStyleType = 'normal' | 'bold' | 'italic' | 'bold italic';
 
 const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selectedPhotoIds }) => {
   const [photos, setPhotos] = useState<any[]>([]);
@@ -46,6 +56,18 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
     severity: 'success'
   });
   const [processing, setProcessing] = useState<boolean>(false);
+ 
+  // New states for enhanced features
+  const [showPhotoNames, setShowPhotoNames] = useState<boolean>(false); // Default to false - hide photo names
+  const [overlayText, setOverlayText] = useState<string>(''); // Custom text to show on collage
+  const [textColor, setTextColor] = useState<string>('#ffffff'); // White text by default
+  const [textSize, setTextSize] = useState<number>(36); // Font size in pixels
+  const [textPosition, setTextPosition] = useState<TextPositionType>('center');
+  const [textStyle, setTextStyle] = useState<FontStyleType>('bold');
+  const [textShadow, setTextShadow] = useState<boolean>(true); // Enable text shadow by default
+  const [textBackgroundColor, setTextBackgroundColor] = useState<string>('rgba(0, 0, 0, 0.3)'); // Semi-transparent background
+  const [showTextBackground, setShowTextBackground] = useState<boolean>(false);
+ 
   const canvasRef = useRef<HTMLDivElement>(null);
   // Reference to store preloaded photos for download/save operations
   const preloadedPhotosRef = useRef<any[]>([]);
@@ -55,13 +77,13 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
   useEffect(() => {
     if (open && selectedPhotoIds.length > 0) {
       setLoading(true);
-      
+     
       try {
         // Filter selected photos from albumStore
         const selectedPhotos = albumStore.photos.filter(
           (photo: any) => selectedPhotoIds.includes(photo.id)
         );
-        
+       
         if (selectedPhotos.length > 0) {
           console.log("Selected photos loaded:", selectedPhotos.length);
           setPhotos(selectedPhotos);
@@ -104,38 +126,48 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
     setNotification({ ...notification, open: false });
   };
 
+  const handleTextPositionChange = (event: React.ChangeEvent<{ value: unknown }>) => {
+    setTextPosition(event.target.value as TextPositionType);
+  };
+
+  const handleTextStyleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
+    setTextStyle(event.target.value as FontStyleType);
+  };
+
+  const handleTextSizeChange = (event: Event, newValue: number | number[]) => {
+    setTextSize(newValue as number);
+  };
+
   // Helper function to preload images and convert them to data URLs
   const preloadImages = async (inputPhotos: any[]) => {
     const preloadedPhotos = [...inputPhotos];
     const failedIndices: number[] = [];
-    
+   
     setNotification({
       open: true,
       message: 'מעבד תמונות, אנא המתן...',
       severity: 'success'
     });
-    
+   
     for (let i = 0; i < preloadedPhotos.length; i++) {
       const photo = preloadedPhotos[i];
       try {
         // Create a new image element
         const img = new Image();
         img.crossOrigin = "anonymous";
-        
+       
         // Create a promise to wait for the image to load
         await new Promise<void>((resolve, reject) => {
           img.onload = () => resolve();
           img.onerror = () => {
-
             console.error(`Failed to load image: ${photo.photoPath}`);
             failedIndices.push(i);
             resolve(); // Continue with other images even if this one fails
           };
-          
+         
           // Try to load with cache busting to avoid CORS issues
-        
           img.src = `${photo.photoPath}${photo.photoPath.includes('?') ? '&' : '?'}cacheBust=${new Date().getTime()}`;
-          
+         
           // Set a timeout in case the image takes too long to load
           setTimeout(() => {
             if (!img.complete) {
@@ -145,18 +177,18 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
             }
           }, 5000);
         });
-        
+       
         if (!failedIndices.includes(i)) {
           // Create a canvas to draw the image
           const canvas = document.createElement('canvas');
           canvas.width = img.width;
           canvas.height = img.height;
           const ctx = canvas.getContext('2d');
-          
+         
           if (ctx) {
             // Draw the image on the canvas
             ctx.drawImage(img, 0, 0);
-            
+           
             try {
               // Convert to data URL
               const dataUrl = canvas.toDataURL('image/png');
@@ -176,11 +208,11 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
         failedIndices.push(i);
       }
     }
-    
+   
     if (failedIndices.length > 0) {
       console.warn(`${failedIndices.length} images failed to preload`);
     }
-    
+   
     return preloadedPhotos;
   };
 
@@ -207,33 +239,33 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
 
     try {
       setProcessing(true);
-      
+     
       // If we haven't preloaded images yet or need to refresh them
       if (preloadedPhotosRef.current.length === 0) {
         preloadedPhotosRef.current = await preloadImages(photos);
       }
-      
+     
       // Store original photos and use preloaded ones temporarily
       const backupPhotos = [...photos];
       setPhotos(preloadedPhotosRef.current);
-      
+     
       // Allow time for DOM to update with preloaded images
       await new Promise(resolve => setTimeout(resolve, 1000));
-      
+     
       setNotification({
         open: true,
         message: 'מייצר תמונת קולאז׳, אנא המתן...',
         severity: 'success'
       });
-      
+     
       const element = canvasRef.current;
-      
+     
       // Wait for all images to be loaded before proceeding
       await ensureImagesLoaded();
-      
+     
       // Additional delay to ensure rendering is complete
       await new Promise(resolve => setTimeout(resolve, 500));
-      
+     
       const canvas = await html2canvas(element, {
         backgroundColor: backgroundColor,
         scale: 2,
@@ -255,16 +287,16 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
           return documentClone;
         }
       });
-      
+     
       // Create download link
       const link = document.createElement('a');
       link.download = `collage_${new Date().toISOString().slice(0,10)}.png`;
       link.href = canvas.toDataURL('image/png');
       link.click();
-      
+     
       // Restore original photos
       setPhotos(backupPhotos);
-      
+     
       setNotification({
         open: true,
         message: 'הקולאז׳ הורד בהצלחה!',
@@ -302,36 +334,36 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
   // Helper to save collage to server
   const saveCollage = async () => {
     if (!canvasRef.current) return;
-    
+   
     try {
       setProcessing(true);
-      
+     
       // If we haven't preloaded images yet
       if (preloadedPhotosRef.current.length === 0) {
         preloadedPhotosRef.current = await preloadImages(photos);
       }
-      
+     
       // Store original photos and use preloaded ones temporarily
       const backupPhotos = [...photos];
       setPhotos(preloadedPhotosRef.current);
-      
+     
       // Allow time for DOM to update with preloaded images
       await new Promise(resolve => setTimeout(resolve, 1000));
-      
+     
       setNotification({
         open: true,
         message: 'שומר את הקולאז׳, אנא המתן...',
         severity: 'success'
       });
-      
+     
       const element = canvasRef.current;
-      
+     
       // Wait for all images to be loaded before proceeding
       await ensureImagesLoaded();
-      
+     
       // Additional delay to ensure rendering is complete
       await new Promise(resolve => setTimeout(resolve, 500));
-      
+     
       const canvas = await html2canvas(element, {
         backgroundColor: backgroundColor,
         scale: 2,
@@ -341,7 +373,7 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
         foreignObjectRendering: false,
         imageTimeout: 0
       });
-      
+     
       // Convert to image blob
       const imageBlob = await new Promise<Blob>((resolve, reject) => {
         canvas.toBlob((blob) => {
@@ -349,22 +381,22 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
           else reject(new Error('Failed to create blob'));
         }, 'image/png');
       });
-      
+     
       // Here you would send the blob to the server
       console.log('Image blob created, ready to upload:', imageBlob.size, 'bytes');
-      
+     
       // Restore original photos
       setPhotos(backupPhotos);
-      
+     
       // Fake server request
       await new Promise(resolve => setTimeout(resolve, 1000));
-      
+     
       setNotification({
         open: true,
         message: 'הקולאז׳ נשמר בהצלחה!',
         severity: 'success'
       });
-      
+     
       // Close dialog after saving
       setTimeout(() => {
         onClose();
@@ -399,7 +431,7 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
           console.error('Failed to preload images:', error);
         }
       };
-      
+     
       doPreload();
     }
   }, [photos, loading]);
@@ -410,6 +442,70 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
     console.log("Selected photo IDs:", selectedPhotoIds);
     console.log("Album store photos:", albumStore.photos);
     console.log("Preloaded photos:", preloadedPhotosRef.current);
+  };
+
+  // Generate text styles based on user selection
+  const getTextStyle = () => {
+    let fontStyle = 'normal';
+    let fontWeight = 'normal';
+   
+    switch (textStyle) {
+      case 'bold':
+        fontWeight = 'bold';
+        break;
+      case 'italic':
+        fontStyle = 'italic';
+        break;
+      case 'bold italic':
+        fontWeight = 'bold';
+        fontStyle = 'italic';
+        break;
+      default:
+        break;
+    }
+
+    // Text shadow style
+    const shadow = textShadow
+      ? '2px 2px 4px rgba(0,0,0,0.7), -2px -2px 4px rgba(0,0,0,0.7), 2px -2px 4px rgba(0,0,0,0.7), -2px 2px 4px rgba(0,0,0,0.7)'
+      : 'none';
+   
+    // Position styles
+    let positionStyle: React.CSSProperties = {
+      position: 'absolute',
+      width: '100%',
+      textAlign: 'center',
+      padding: '10px',
+      zIndex: 1000,
+      fontWeight,
+      fontStyle,
+      color: textColor,
+      fontSize: `${textSize}px`,
+      textShadow: shadow,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    };
+   
+    // Add background if enabled
+    if (showTextBackground) {
+      positionStyle.backgroundColor = textBackgroundColor;
+    }
+   
+    // Set position based on user selection
+    switch (textPosition) {
+      case 'top':
+        positionStyle.top = 0;
+        break;
+      case 'center':
+        positionStyle.top = '50%';
+        positionStyle.transform = 'translateY(-50%)';
+        break;
+      case 'bottom':
+        positionStyle.bottom = 0;
+        break;
+    }
+   
+    return positionStyle;
   };
 
   // Render different layouts
@@ -423,96 +519,120 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
     // Log for debugging
     console.log(`Rendering collage with ${photos.length} photos, layout: ${layout}`);
 
+    // Component to render the overlay text
+    const TextOverlay = () => (
+      overlayText ? (
+        <Box sx={getTextStyle()}>
+          {overlayText}
+        </Box>
+      ) : null
+    );
+
     switch (layout) {
       case 'grid':
         return (
-          <Grid container spacing={gapSize / 4}>
-            {photos.map((photo) => (
-              <Grid item xs={6} sm={4} key={photo.id}>
-                <Paper elevation={2}>
+          <Box sx={{ position: 'relative' }}>
+            <Grid container spacing={gapSize / 4}>
+              {photos.map((photo) => (
+                <Grid item xs={6} sm={4} key={photo.id}>
+                  <Paper elevation={2}>
+                    <img
+                      src={photo.photoPath}
+                      alt={photo.photoName || 'תמונה'}
+                      style={{
+                        width: '100%',
+                        height: 'auto',
+                        display: 'block',
+                        maxHeight: '200px',
+                        objectFit: 'cover'
+                      }}
+                      onError={(e) => {
+                        console.error(`Error loading image: ${photo.photoPath}`);
+                        (e.target as HTMLImageElement).src = 'https://via.placeholder.com/150?text=Image+Error';
+                      }}
+                    />
+                    {showPhotoNames && (
+                      <Box sx={{ p: 1 }}>
+                        <Typography variant="caption" display="block" align="center">
+                          {photo.photoName || 'תמונה ללא שם'}
+                        </Typography>
+                      </Box>
+                    )}
+                  </Paper>
+                </Grid>
+              ))}
+            </Grid>
+            <TextOverlay />
+          </Box>
+        );
+     
+      case 'horizontal':
+        return (
+          <Box sx={{ position: 'relative' }}>
+            <Box sx={{ display: 'flex', flexDirection: 'row', gap: `${gapSize}px`, overflowX: 'auto' }}>
+              {photos.map((photo) => (
+                <Paper elevation={2} key={photo.id} sx={{ flex: '0 0 auto', width: `${100 / Math.min(photos.length, 3)}%` }}>
                   <img
                     src={photo.photoPath}
                     alt={photo.photoName || 'תמונה'}
-                    style={{ 
-                      width: '100%', 
-                      height: 'auto', 
-                      display: 'block',
-                      maxHeight: '200px',
-                      objectFit: 'cover'
+                    style={{
+                      width: '100%',
+                      height: '200px',
+                      objectFit: 'cover',
+                      display: 'block'
                     }}
                     onError={(e) => {
-                      console.error(`Error loading image: ${photo.photoPath}`);
                       (e.target as HTMLImageElement).src = 'https://via.placeholder.com/150?text=Image+Error';
                     }}
                   />
-                  <Box sx={{ p: 1 }}>
-                    <Typography variant="caption" display="block" align="center">
-                      {photo.photoName || 'תמונה ללא שם'}
-                    </Typography>
-                  </Box>
+                  {showPhotoNames && (
+                    <Box sx={{ p: 1 }}>
+                      <Typography variant="caption" display="block" align="center">
+                        {photo.photoName || 'תמונה ללא שם'}
+                      </Typography>
+                    </Box>
+                  )}
                 </Paper>
-              </Grid>
-            ))}
-          </Grid>
-        );
-      
-      case 'horizontal':
-        return (
-          <Box sx={{ display: 'flex', flexDirection: 'row', gap: `${gapSize}px`, overflowX: 'auto' }}>
-            {photos.map((photo) => (
-              <Paper elevation={2} key={photo.id} sx={{ flex: '0 0 auto', width: `${100 / Math.min(photos.length, 3)}%` }}>
-                <img
-                  src={photo.photoPath}
-                  alt={photo.photoName || 'תמונה'}
-                  style={{ 
-                    width: '100%', 
-                    height: '200px', 
-                    objectFit: 'cover', 
-                    display: 'block' 
-                  }}
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'https://via.placeholder.com/150?text=Image+Error';
-                  }}
-                />
-                <Box sx={{ p: 1 }}>
-                  <Typography variant="caption" display="block" align="center">
-                    {photo.photoName || 'תמונה ללא שם'}
-                  </Typography>
-                </Box>
-              </Paper>
-            ))}
+              ))}
+            </Box>
+            <TextOverlay />
           </Box>
         );
-      
+     
       case 'vertical':
         return (
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: `${gapSize}px` }}>
-            {photos.map((photo) => (
-              <Paper elevation={2} key={photo.id}>
-                <img
-                  src={photo.photoPath}
-                  alt={photo.photoName || 'תמונה'}
-                  style={{ 
-                    width: '100%', 
-                    height: 'auto', 
-                    maxHeight: '250px',
-                    objectFit: 'cover',
-                    display: 'block' 
-                  }}
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'https://via.placeholder.com/150?text=Image+Error';
-                  }}
-                />
-                <Box sx={{ p: 1 }}>
-                  <Typography variant="caption" display="block" align="center">
-                    {photo.photoName || 'תמונה ללא שם'}
-                  </Typography>
-                </Box>
-              </Paper>
-            ))}
+          <Box sx={{ position: 'relative' }}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: `${gapSize}px` }}>
+              {photos.map((photo) => (
+                <Paper elevation={2} key={photo.id}>
+                  <img
+                    src={photo.photoPath}
+                    alt={photo.photoName || 'תמונה'}
+                    style={{
+                      width: '100%',
+                      height: 'auto',
+                      maxHeight: '250px',
+                      objectFit: 'cover',
+                      display: 'block'
+                    }}
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = 'https://via.placeholder.com/150?text=Image+Error';
+                    }}
+                  />
+                  {showPhotoNames && (
+                    <Box sx={{ p: 1 }}>
+                      <Typography variant="caption" display="block" align="center">
+                        {photo.photoName || 'תמונה ללא שם'}
+                      </Typography>
+                    </Box>
+                  )}
+                </Paper>
+              ))}
+            </Box>
+            <TextOverlay />
           </Box>
         );
-      
+     
       case 'random':
         return (
           <Box sx={{ position: 'relative', height: '500px' }}>
@@ -522,10 +642,10 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
               const top = Math.floor(Math.random() * 60);
               const zIndex = index + 1;
               const rotation = Math.floor(Math.random() * 20) - 10;
-              
+             
               return (
-                <Paper 
-                  elevation={3} 
+                <Paper
+                  elevation={3}
                   key={photo.id}
                   sx={{
                     position: 'absolute',
@@ -540,26 +660,29 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
                   <img
                     src={photo.photoPath}
                     alt={photo.photoName || 'תמונה'}
-                    style={{ 
-                      width: '100%', 
-                      height: 'auto', 
-                      display: 'block' 
+                    style={{
+                      width: '100%',
+                      height: 'auto',
+                      display: 'block'
                     }}
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = 'https://via.placeholder.com/150?text=Image+Error';
                     }}
                   />
-                  <Box sx={{ p: 1 }}>
-                    <Typography variant="caption" display="block" align="center" noWrap>
-                      {photo.photoName || 'תמונה ללא שם'}
-                    </Typography>
-                  </Box>
+                  {showPhotoNames && (
+                    <Box sx={{ p: 1 }}>
+                      <Typography variant="caption" display="block" align="center" noWrap>
+                        {photo.photoName || 'תמונה ללא שם'}
+                      </Typography>
+                    </Box>
+                  )}
                 </Paper>
               );
             })}
+            <TextOverlay />
           </Box>
         );
-      
+     
       default:
         return null;
     }
@@ -599,7 +722,7 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
                   <Typography variant="h6" gutterBottom>
                     הגדרות קולאז'
                   </Typography>
-                  
+                 
                   <FormControl component="fieldset" fullWidth sx={{ mb: 2 }}>
                     <FormLabel component="legend">פריסה</FormLabel>
                     <RadioGroup value={layout} onChange={handleLayoutChange}>
@@ -609,7 +732,7 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
                       <FormControlLabel value="random" control={<Radio />} label="אקראי" />
                     </RadioGroup>
                   </FormControl>
-                  
+                 
                   <Box sx={{ mb: 2 }}>
                     <Typography gutterBottom>מרווח בין תמונות</Typography>
                     <Slider
@@ -621,7 +744,7 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
                       valueLabelDisplay="auto"
                     />
                   </Box>
-                  
+                 
                   <Box sx={{ mb: 2 }}>
                     <Typography gutterBottom>צבע רקע</Typography>
                     <Box sx={{ display: 'flex', alignItems: 'center' }}>
@@ -633,6 +756,123 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
                       />
                       <Typography variant="body2">{backgroundColor}</Typography>
                     </Box>
+                  </Box>
+                 
+                  <FormControl component="fieldset" fullWidth sx={{ mb: 2, mt: 2 }}>
+                    <FormControlLabel
+                      control={
+                        <Checkbox
+                          checked={showPhotoNames}
+                          onChange={(e) => setShowPhotoNames(e.target.checked)}
+                        />
+                      }
+                      label="הצג שמות תמונות בקולאז'"
+                    />
+                  </FormControl>
+                 
+                  {/* Text Overlay Settings */}
+                  <Box sx={{ mt: 3, mb: 2, borderTop: '1px solid #ddd', pt: 2 }}>
+                    <Typography variant="h6" gutterBottom sx={{ display: 'flex', alignItems: 'center' }}>
+                      <TextFieldsIcon sx={{ mr: 1 }} /> טקסט על הקולאז'
+                    </Typography>
+                   
+                    <TextField
+                      fullWidth
+                      label="טקסט על הקולאז'"
+                      value={overlayText}
+                      onChange={(e) => setOverlayText(e.target.value)}
+                      variant="outlined"
+                      margin="normal"
+                      placeholder="לדוגמה: BABY"
+                    />
+                   
+                    <FormControl fullWidth margin="normal">
+                      <InputLabel id="text-position-label">מיקום הטקסט</InputLabel>
+                      <Select
+                        labelId="text-position-label"
+                        value={textPosition}
+                        onChange={(e) => setTextPosition(e.target.value as TextPositionType)}
+                        label="מיקום הטקסט"
+                      >
+                        <MenuItem value="top">למעלה</MenuItem>
+                        <MenuItem value="center">מרכז</MenuItem>
+                        <MenuItem value="bottom">למטה</MenuItem>
+                      </Select>
+                    </FormControl>
+                   
+                    <FormControl fullWidth margin="normal">
+                      <InputLabel id="text-style-label">סגנון טקסט</InputLabel>
+                      <Select
+                        labelId="text-style-label"
+                        value={textStyle}
+                        onChange={(e) => setTextStyle(e.target.value as FontStyleType)}
+                        label="סגנון טקסט"
+                      >
+                        <MenuItem value="normal">רגיל</MenuItem>
+                        <MenuItem value="bold">מודגש</MenuItem>
+                        <MenuItem value="italic">נטוי</MenuItem>
+                        <MenuItem value="bold italic">מודגש ונטוי</MenuItem>
+                      </Select>
+                    </FormControl>
+                   
+                    <Typography gutterBottom sx={{ mt: 2 }}>גודל טקסט</Typography>
+                    <Slider
+                      value={textSize}
+                      onChange={handleTextSizeChange}
+                      min={12}
+                      max={72}
+                      step={4}
+                      valueLabelDisplay="auto"
+                    />
+                   
+                    <Box sx={{ display: 'flex', alignItems: 'center', mt: 2 }}>
+                      <Typography gutterBottom sx={{ mr: 2 }}>צבע טקסט</Typography>
+                      <input
+                        type="color"
+                        value={textColor}
+                        onChange={(e) => setTextColor(e.target.value)}
+                        style={{ marginRight: '8px' }}
+                      />
+                    </Box>
+                   
+                    <FormControlLabel
+                      control={
+                        <Checkbox
+                          checked={textShadow}
+                          onChange={(e) => setTextShadow(e.target.checked)}
+                        />
+                      }
+                      label="צל טקסט"
+                      sx={{ mt: 1 }}
+                    />
+                   
+                    <FormControlLabel
+                      control={
+                        <Checkbox
+                          checked={showTextBackground}
+                          onChange={(e) => setShowTextBackground(e.target.checked)}
+                        />
+                      }
+                      label="רקע לטקסט"
+                      sx={{ mt: 1 }}
+                    />
+                   
+                    {showTextBackground && (
+                      <Box sx={{ display: 'flex', alignItems: 'center', mt: 1, ml: 4 }}>
+                        <Typography gutterBottom sx={{ mr: 2 }}>צבע רקע לטקסט</Typography>
+                        <input
+                          type="color"
+                          value={textBackgroundColor.replace('rgba', 'rgb').replace(/,[^,]*\)/, ')')}
+                          onChange={(e) => {
+                            // Convert RGB to RGBA with opacity 0.3
+                            const rgb = e.target.value;
+                            const rgba = rgb.replace('rgb', 'rgba').replace(')', ',0.3)');
+                            setTextBackgroundColor(rgba);
+                          }}
+                          style={{ marginRight: '8px' }}
+                        />
+                      </Box>
+                    )}
                   </Box>
 
                   <Box sx={{ mt: 3 }}>
@@ -655,10 +895,10 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
                   </Box>
 
                   {isDevelopment && (
-                    <Button 
-                      variant="outlined" 
-                      color="info" 
-                      size="small" 
+                    <Button
+                      variant="outlined"
+                      color="info"
+                      size="small"
                       onClick={debugPhotos}
                       sx={{ mt: 2 }}
                     >
@@ -667,16 +907,17 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
                   )}
                 </Box>
               </Grid>
-              
+             
               <Grid item xs={12} md={8}>
-                <Paper 
-                  elevation={3} 
-                  sx={{ 
-                    p: 2, 
-                    height: '100%', 
+                <Paper
+                  elevation={3}
+                  sx={{
+                    p: 2,
+                    height: '100%',
                     bgcolor: backgroundColor,
                     overflow: 'auto',
-                    minHeight: '500px'
+                    minHeight: '500px',
+                    position: 'relative'
                   }}
                 >
                   <Box ref={canvasRef}>
@@ -689,16 +930,16 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
         </DialogContent>
         <DialogActions>
           <Button onClick={onClose}>ביטול</Button>
-          <Button 
+          <Button
             startIcon={<DownloadIcon />}
             onClick={downloadCollage}
             disabled={photos.length === 0 || processing}
           >
             {processing ? 'מעבד...' : 'הורד קולאז\''}
           </Button>
-          <Button 
-            variant="contained" 
-            color="primary" 
+          <Button
+            variant="contained"
+            color="primary"
             startIcon={<SaveIcon />}
             onClick={saveCollage}
             disabled={photos.length === 0 || processing}
@@ -709,9 +950,9 @@ const CollageCreator: React.FC<CollageCreatorProps> = ({ open, onClose, selected
       </Dialog>
 
       {/* התראות */}
-      <Snackbar 
-        open={notification.open} 
-        autoHideDuration={6000} 
+      <Snackbar
+        open={notification.open}
+        autoHideDuration={6000}
         onClose={handleCloseNotification}
         anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
       >
